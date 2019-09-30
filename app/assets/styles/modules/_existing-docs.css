@@ -1,0 +1,64 @@
+.existing-docs {
+   margin-bottom: 92px;
+   
+   & > .wrapper {
+      padding: 0 176px;
+   }
+
+   &__cat {
+      float: left;
+      width: 212px;
+      color: #a7a7a7;
+
+      &:first-child {
+         color: $boxBlue;
+      }
+
+      &__title {
+         font-size: 12px;
+         font-weight: bold;
+         line-height: 27px;
+      }
+
+      .num {
+         font-family: Roboto;
+         font-size: 36px;
+         font-weight: 900;
+      }
+
+      & i {
+         display: block;
+         float: left;
+         width: 70px;
+         height: 70px;
+         margin-right: 15px;
+
+         &.icon-{
+            &all {
+               background: url(../images/icons/icon-all.svg) no-repeat;
+            }
+            &book {
+               background: url(../images/icons/icon-book.svg) no-repeat;
+            }
+            &doc {
+               background: url(../images/icons/icon-doc.svg) no-repeat;
+            }
+            &pic {
+               background: url(../images/icons/icon-pic.svg) no-repeat;
+            }
+            &video {
+               background: url(../images/icons/icon-video.svg) no-repeat;
+            }
+            &relic {
+               background: url(../images/icons/icon-relic.svg) no-repeat;
+            }
+            &newspaper {
+               background: url(../images/icons/icon-newspaper.svg) no-repeat;
+            }
+            &voice {
+               background: url(../images/icons/icon-voice.svg) no-repeat;
+            }
+         }
+      }
+   }
+}

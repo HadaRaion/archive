@@ -1,0 +1,22 @@
+.wrapper {
+	position: relative;
+
+	padding-left: 100px;
+	padding-right: 100px;
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	/*	background-color:rgba($boxBlue, 0.1) ;*/	
+	.wrapper {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+.main {
+	width: 100%;
+	min-height: 600px;
+	height: auto;
+	padding-top: 131px;
+	@mixin clearfix;
+}

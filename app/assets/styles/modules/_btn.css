@@ -1,0 +1,105 @@
+.btn-small {
+   height: 16px;
+   padding: 0 7px;
+   border-radius: 3px;
+   font-size: 9px;
+   font-weight: 500;
+   color: #fff;
+   line-height: 16px;
+
+   &:after{
+      font-family: 'xeicon';
+      color: #FFF;
+      font-size: 9px;
+      margin-left: 3px;
+   }
+
+   &-black {
+      background : #000;
+   }
+   
+   &-blue {
+      background : $boxBlue;
+
+      &:after {
+         content: "\e91a";
+      }
+   }
+
+   &-gray {
+      background : #a7a7a7;
+
+      &:after {
+         content: "\e913";
+      }  
+   }
+}
+
+.btn-tag {
+   width: 93px;
+   height: 27px;
+   border-radius: 4px;
+   background-color: #ececec;
+   padding:0 13px 0 11px;;
+   color: #707070;
+   line-height: 27px;
+}
+
+.btn-download {
+   display: inline-block;
+   width: 24px;
+  height: 24px;
+  position: relative;
+  font-size: 0;
+  
+  &:after {
+   content: "\eb7c";
+   display: inline-block;
+   font-family: 'xeicon';
+   color: #707070;;
+   margin-left: 2px;
+   font-size: 18px;
+   }
+}
+
+.to-top {
+   display: inline-block;
+   background-color: #FFF;
+   text-align: center;
+   width: 34px;
+   height: 34px;
+   border-radius: 17px;
+   border: 4px solid #707070;
+
+   position: fixed;
+   bottom: 50px;
+   right: 50%;
+   transform: translateX(600px);
+   transition: opacity .5s, visibility .5s;
+   opacity: 0;
+   visibility: hidden;
+   z-index: 1000;
+
+   &:after {
+      content: "\e944";
+      font-family: 'xeicon';
+      color: #707070;
+      font-size: 18px;
+      line-height: 26px;
+   }
+
+   &.show {
+      opacity: 1;
+      visibility: visible;
+   }
+}
+
+.btn.sns-share {
+   position: relative;
+   width: 32px;
+   height: 26px;
+   font-size: 0;
+   margin: 15px 0 15px 40px;
+   background: url(../images/icons/icon-social-share.svg) no-repeat;
+   background-size: 32px 26px;
+}

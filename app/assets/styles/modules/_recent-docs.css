@@ -1,0 +1,31 @@
+.recent-docs {
+   margin-right: -12px;
+   margin-bottom: 90px;
+
+   &__doc {
+      width: 241px;
+      float: left;
+      margin-right: 12px;
+
+      :hover img {
+         transform: scale(1.07);
+      }
+
+      img {
+         transition: all .3s ease-out;
+      }
+
+      &__thumpnail {
+         height: 171 px;
+         overflow: hidden;
+      }
+
+      h2 {
+         overflow: hidden;
+         text-overflow:ellipsis;
+         white-space:nowrap;
+         word-wrap:normal;
+         margin: 14px 0 5px;
+      }  
+   }
+}

@@ -1,0 +1,14 @@
+.posts-title {
+   width: 167px;
+   height: 41px;
+   border: 1px solid #000;
+   border-radius: 83px;
+   margin: 95px auto 45px;
+
+   & > h1 {
+      color: #000;
+      font-size: 17px;
+      font-weight: bold;
+      line-height: 39px;
+   }
+}

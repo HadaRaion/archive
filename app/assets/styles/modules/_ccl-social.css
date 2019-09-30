@@ -1,0 +1,65 @@
+.ccl-social {
+   margin: 93px 0;
+   height: 70px;
+   text-align: right;
+
+   .social {
+      float: right;
+   }
+   
+   .sns-share__list {
+      width: 173px;
+     height: 55px;
+     border: 1px solid #000;
+     position: absolute;
+     top: -80px;
+     left : -73px;
+     padding: 9px 15px;
+     display: none;
+   
+     li > a {
+      width: 35px;
+      height: 35px;
+      border-radius: 18px;
+      float: left;
+      margin: 0 6px;
+      color: #fff;
+      font-size: 22px;
+      line-height: 35px;
+
+      &.fb{
+         background: #3c5a98;
+      }      
+      &.tw{
+         background: #59aded;
+      }
+      &.ka{
+         background:#fad32e;
+      }
+     }
+   }
+
+   > a {
+      float: right;
+   }
+   .ccl {
+      float: left;
+      font-size: 12px;
+      line-height: 1.42;
+      color: #707070;
+      text-align: right;
+      
+      h4 {
+         font-weight: bold;
+      }
+   }
+
+   .ccl-image {  
+      width: 142px;
+      height: 51px;
+      float: left;
+      background: url(../images/ccl-by-nc-nd.svg) no-repeat;
+      background-size: 142px 51px;
+      margin-left:14px;
+   }
+}
