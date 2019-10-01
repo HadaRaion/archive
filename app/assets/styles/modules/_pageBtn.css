@@ -1,0 +1,54 @@
+.pageBtn {
+   display: inline-block;
+
+   .page-number {
+      width: 25px;
+      height: 35px;
+      display: block;
+      float: left;
+      margin: 0 5px;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 35px;
+      text-align: center;
+      color: #707070;
+
+
+   }
+
+   .current-page {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 33px;
+      color: $boxBlue;
+   }
+
+   .page-btn {
+      width: 20px;
+      height: 35px;
+      display: block;
+      float: left;
+      margin: 0 4px;
+
+      &.first-page {
+         background: url(../images/icons/icon-first-page.svg) no-repeat center center;
+         background-size: 13px 12px;
+      }
+   
+      &.prev-page {
+         background: url(../images/icons/icon-prev-page.svg) no-repeat center center;
+         background-size: 6px 12px;
+      }
+   
+      &.next-page {
+         background: url(../images/icons/icon-next-page.svg) no-repeat center center;
+         background-size: 6px 12px;
+      }
+   
+      &.last-page {
+         background: url(../images/icons/icon-last-page.svg) no-repeat center center;
+         background-size: 13px 12px;
+      }
+   }
+
+}

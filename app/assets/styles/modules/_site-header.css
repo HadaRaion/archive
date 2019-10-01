@@ -50,9 +50,8 @@
                   display: none;
                   z-index: 100;
                   left: -12px;
-                  width: 90px;
+                  min-width: 90px;
                   margin-top: 12px;
-                  height: 108px;
                   padding: 12px;
                   border: solid 1px #000000;
                   background-color: #FFF;
@@ -61,6 +60,7 @@
 
                   & > li {
                      margin-bottom:10px;
+                     width: 100%;;
                      &:hover {
                         color:$fontBlue;
                      }

@@ -6,8 +6,8 @@ import slick from 'slick-carousel';
 import Menu from './modules/Menu';
 import HeroSlider from './modules/HeroSlider';
 import GoTop from './modules/GoTop';
-import DocSlider from './modules/DocToggles'
-import DocSlider from './modules/DocSlider'
+import DocSlider from './modules/DocToggles';
+import DocSlider from './modules/DocSlider';
 import SnsShare from './modules/SnsShare';
 
 import Test from './modules/Test';
@@ -22,4 +22,4 @@ var snsShare = new SnsShare();
 
 
 
-
+var test = new Test();

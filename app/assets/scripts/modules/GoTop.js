@@ -26,4 +26,3 @@ class GoTop {
 }
 
 export default GoTop;
-

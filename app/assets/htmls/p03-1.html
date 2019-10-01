@@ -1,0 +1,243 @@
+@@include('modules/header.html')
+
+<!-- p03 검색목록 start -->
+<div class="main">
+   <div class="wrapper">
+      <section>
+<!-- 최상단 이동 버튼 start -->
+         <a class="btn to-top" id="toTop" title="상단으로 이동"></a>
+<!-- 최상단 이동 버튼 end -->
+
+<!-- 상단 영역 start -->
+         <div class="align-top">
+<!-- 상단 검색 영역 start -->
+            <div class="search-box">
+               <form action="">
+                  <input type="text" placeholder="" name="search">
+                  <button type="submit">검색</button>
+               </form>
+            </div>
+<!-- 상단 검색 영역 end -->
+<!-- 상단 연관검색어 start -->
+            <div class="search-related">
+               <div class="search-related__title">연관검색어</div>
+               <ul class="search-related__tags">
+                  <li><a href="#">조국</a></li>
+                  <li><a href="#">법무부장관</a></li>
+                  <li><a href="#">청문회</a></li>
+                  <li><a href="#">고령화</a></li>
+                  <li><a href="#">소녀상</a></li>
+               </ul>
+            </div>
+<!-- 상단 연관검색어 end -->
+         </div>
+<!-- 상단 영역 end -->
+
+<!-- 왼쪽사이드 상세검색 영역 start -->
+         <aside class="search-condition">
+            <h2 class="search-condition__title">상세검색</h2>
+
+<!-- 왼쪽사이드 제목/내용/생산자/태그 검색 start -->
+            <h3>제목</h3>
+            <input class="" type="text" name="search">
+            <h3>내용</h3>
+            <input class="" type="text" name="search">
+            <h3>생산자</h3>
+            <input class="" type="text" name="search">
+            <h3>태그</h3>
+            <input class="" type="text" name="search">
+<!-- 왼쪽사이드 제목/내용/생산자/태그 검색 end -->
+
+<!-- 왼쪽사이드 생산일자 검색 start -->
+            <h3 class="search-condition__date">생산일자</h3>
+            <input class="" type="date" name="search"><span class="dash"> -</span>
+            <input class="" type="date" name="search">
+<!-- 왼쪽사이드 생산일자 검색 end -->
+
+<!-- 왼쪽사이드 저작권 검색 start -->
+            <h3 class="search-condition__title">CCL</h3>
+
+            <select id="ccl-select">
+               <option value="" rel="ccl">해당없음</option>
+               <option value="">저작권표시</option>
+               <option value="">저작권표시-비영리</option>
+               <option value="">저작권표시-변경금지</option>
+               <option value="">저작권표시-동일조건 변경</option>
+            </select>
+<!-- 왼쪽사이드 저작권 검색 end -->
+
+<!-- 왼쪽사이드 공개구분 체크박스 start -->
+            <h3 class="search-checkbox">공개구분</h3>
+            <label class="checkbox-container">전체
+               <input type="radio" checked="checked" name="radio">
+               <span class="checkmark checkmark-radio"></span>
+            </label>
+            <label class="checkbox-container">공개
+               <input type="radio" name="radio">
+               <span class="checkmark checkmark-radio"></span>
+            </label>
+            <label class="checkbox-container">비공개
+               <input type="radio" name="radio">
+               <span class="checkmark checkmark-radio"></span>
+            </label>
+<!-- 왼쪽사이드 공개구분 체크박스 end -->
+
+<!-- 왼쪽사이드 파일포맷 체크박스 start -->
+            <h3 class="search-checkbox">파일포맷</h3>
+            <label class="checkbox-container">JPEG
+               <input type="checkbox" name="checkbox">
+               <span class="checkmark checkmark-checkbox"></span>
+            </label>
+            <label class="checkbox-container">PDF
+               <input type="checkbox" name="checkbox">
+               <span class="checkmark checkmark-checkbox"></span>
+            </label>
+            <label class="checkbox-container">MP4
+               <input type="checkbox" name="checkbox">
+               <span class="checkmark checkmark-checkbox"></span>
+            </label>
+<!-- 왼쪽사이드 파일포맷 체크박스 end -->
+         </aside>
+<!-- 왼쪽사이드 상세검색 영역 end -->
+
+<!-- 오른쪽 콘텐츠 영역 start -->
+         <div class="posts">
+
+<!-- 오른쪽 콘텐츠 영역 상단 start -->
+            <div class="top-box">
+
+<!-- 오른쪽 콘텐츠 영역 상단 검색결과 start -->
+               <div class="search-result">
+                  <h3>전체 <span class="search-result__count">35</span>건이 검색되었습니다.</h3>
+               </div>
+<!-- 오른쪽 콘텐츠 영역 상단 검색결과 end -->
+
+<!-- 오른쪽 콘텐츠 영역 상단 정렬방식 start -->
+               <div class="posts__array">
+                  <div class="posts__array-sort">
+                     <select id="array-sort">
+                        <option value="" rel="">가나다순</option>
+                        <option value="">최근 생산일순</option>
+                        <option value="">오래된 생산일순</option>
+                        <option value="">최근 등록일순</option>
+                     </select>
+                  </div>
+
+
+                  <div class="posts__array-view">
+                     <select id="array-view">
+                        <option value="" rel="">제목 + 본문</option>
+                        <option value="">제목 + 썸네일</option>
+                     </select>
+                  </div>
+
+
+                  <div class="posts__array-number">
+                     <select id="array-number">
+                        <option value="10" rel="number-of-array">12건보기</option>
+                        <option value="20">24건보기</option>
+                        <option value="50">48건보기</option>
+                        <option value="100">96건보기</option>
+                     </select>
+                  </div>
+
+               </div>
+<!-- 오른쪽 콘텐츠 영역 상단 정렬방식 end -->
+            </div>
+<!-- 오른쪽 콘텐츠 영역 상단 end -->
+
+<!-- 오른쪽 콘텐츠 영역 사진으로 보기 12건 start -->
+            <div class="post">
+                  <ul class="posts-with-thumbnaile">
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post no-thumbnail">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style=""></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     <li class="posts-with-thumbnaile__post">
+                        <a href="#">
+                           <div class="posts-with-thumbnaile__post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                           <h1 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h1>
+                           <p class="text-date">2035. 12. 27</p>
+                        </a>
+                     </li>
+                     </ul>
+
+            </div>
+<!-- 오른쪽 콘텐츠 영역 사진으로 보기 12건  end -->
+
+<!-- 오른쪽 콘텐츠 영역 페이지네이션 start -->
+            <nav class="pagination" role="navigation">
+               <div class="pageBtn">
+                  <a hrfe="#" class="page-btn first-page"></a>
+                  <a hrfe="#" class="page-btn prev-page"></a>
+                  <a hrfe="#" class="page-number current-page">1</a>
+                  <a hrfe="#" class="page-number">2</a>
+                  <a hrfe="#" class="page-number">3</a>
+                  <a hrfe="#" class="page-number">4</a>
+                  <a hrfe="#" class="page-number">5</a>
+                  <a hrfe="#" class="page-btn next-page"></a>
+                  <a hrfe="#" class="page-btn last-page"></a>
+               </div>
+            </nav>
+<!-- 오른쪽 콘텐츠 영역 페이지네이션 end -->
+
+         </div>
+<!-- 오른쪽 콘텐츠 영역 end -->
+
+      </section>
+   </div>
+</div>
+<!-- p03 검색목록 end -->
+@@include('modules/footer.html')

@@ -3,9 +3,10 @@ import $ from 'jquery';
 class Menu {
    constructor() {
       this.boardDropdown = $('#boardDropdown')
-      this.boardDropdownContents = $('dropdown-content')
+      this.boardDropdownContents = $('.dropdown-content')
       this.navList = $('.site-header__nav-content__menu-list.notfirst')
       this.navListFirst = $('.site-header__nav-content__menu-list.first')
+      
       this.events()
    }
 

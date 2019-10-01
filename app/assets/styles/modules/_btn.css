@@ -43,7 +43,18 @@
    padding:0 13px 0 11px;;
    color: #707070;
    line-height: 27px;
+
+   &-small{
+      width: 70px;
+      height: 18px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      padding:0 8px 0 6px;;
+   }
 }
+
+
 
 .btn-download {
    display: inline-block;

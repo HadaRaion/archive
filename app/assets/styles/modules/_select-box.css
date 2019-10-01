@@ -1,0 +1,201 @@
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  width: 100px;
+  height: 20px;
+  background: #fff;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0 10px;
+
+  &:after {
+      content: "";
+      width: 0;
+      height: 0;
+      border: 7px solid transparent;
+      border-color: #707070 transparent transparent transparent;
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      color: #707070;
+  }
+
+  &:active,
+  &.active {
+    &:after {
+      top: 6px;
+      border-color: transparent transparent #707070 transparent;
+    }
+  }
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 100;
+
+  padding: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #000;
+
+
+  li {
+    margin: 0;
+    padding: 3px 0;
+    text-indent: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+
+    &:hover {
+      color: $fontBlue;
+    }
+    &[rel="hide"] {
+      display: none;
+    }
+
+    &:last-child {
+      margin-bottom: 3px;
+    }
+  }
+}
+
+.posts__array {
+   float: right;
+}
+.posts__array > div {
+
+   float: left;
+   margin-left : 12px;
+}
+
+.posts__array {
+   .select {
+      width: 120px;
+      height: 33px;
+      background: #fff;
+      color: #707070;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 28px;
+   }
+
+   .select-styled {
+      padding: 0 10px;
+      overflow: hidden;
+
+      &:after {
+         content: "";
+         width: 0;
+         height: 0;
+         border: 7px solid transparent;
+         border-color: #707070 transparent transparent transparent;
+         position: absolute;
+         top: 12px;
+         right: 12px;
+     }
+   
+     &:active,
+     &.active {
+       &:after {
+         top: 6px;
+         border-color: transparent transparent #707070 transparent;
+       }
+     }
+   }
+
+   .select-options {
+      li {
+         margin: 0;
+         padding: 3px 0;
+         text-indent: 10px;
+         font-size: 12px;
+         font-weight: 500;
+         line-height: 2;
+
+         &:last-child {
+            margin-bottom: 3px;
+         }
+         }
+   }
+
+}
+
+
+.search-condition {
+
+  .select {
+    width: 156px;
+    height: 30px;
+    background: #e3e3e3;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .select-styled {
+    padding: 0 10px;
+    overflow: hidden;
+
+  }
+
+  .select-options {
+    
+    margin-top: 10px;
+
+    li {
+      margin: 0;
+      padding: 3px 0;
+      text-indent: 10px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 2;
+
+      &:last-child {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}
+
+
+
+i.title-text {
+  background: url(../images/icons/icon-title-text.svg);
+  width: 14px;
+  height: 13px;
+  display: inline-block;
+  background-size: cover;
+  margin: 0 7px -2px 0;
+}
+
+i.title-img {
+  background: url(../images/icons/icon-title-img.svg);
+  width: 14px;
+  height: 12px;
+  display: inline-block;
+  background-size: cover;
+  margin: 0 7px -2px 0;
+  color: $boxBlue;
+}
+

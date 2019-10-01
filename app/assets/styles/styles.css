@@ -14,6 +14,8 @@
 @import "modules/_btn";
 @import "modules/_site-header";
 @import "modules/_site-footer";
+@import "modules/_select-box";
+@import "modules/_pageBtn.css";
 
 /* BEM Blocks -- realted index  */
 @import "modules/_hero-slider";
@@ -22,6 +24,12 @@
 @import "modules/_recent-posts";
 @import "modules/_recent-docs";
 @import "modules/_existing-docs";
+@import "modules/_search-box";
+
+/* BEM Blocks -- realted p3  */
+@import "modules/_p3";
+@import "modules/_aside-search-condition";
+@import "modules/_posts";
 
 /* BEM Blocks -- realted p4  */
 @import "modules/_doc";
@@ -31,6 +39,5 @@
 @import "modules/_related-information";
 @import "modules/_attachments";
 @import "modules/_ccl-social";
-
 
 @import "modules/_test";
