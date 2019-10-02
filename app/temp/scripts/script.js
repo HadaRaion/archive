@@ -2,23 +2,6 @@
 $(".num").counterUp();
 
 
-// 메인네비게이션메뉴 하버
-$("#cclDropdown").click(function() {
-  $("ul:first", this).slideToggle(100);
-});
-
-$(".posts__array-sort").click(function() {
-  $("ul:first", this).slideToggle(0);
-});
-
-$(".posts__array-view").click(function() {
-  $("ul:first", this).slideToggle(0);
-});
-
-$(".posts__array-count").click(function() {
-  $("ul:first", this).slideToggle(0);
-});
-
 
 // 페이지 넘버
 var pageNumber = $(".page-number");
@@ -86,3 +69,17 @@ $('select').each(function(){
     });
 
 });
+
+
+// 사이드 메뉴
+var sideNavMenu = $(".nav-menu");
+
+for (var i = 0; i < sideNavMenu.length; i++) {
+
+  sideNavMenu[i].onclick = function() {
+
+      sideNavMenu.removeClass("active");
+      this.classList.add("active");
+  };
+  
+}

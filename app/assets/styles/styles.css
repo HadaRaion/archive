@@ -27,9 +27,10 @@
 @import "modules/_search-box";
 
 /* BEM Blocks -- realted p3  */
-@import "modules/_p3";
+@import "modules/_posts-p3";
 @import "modules/_aside-search-condition";
 @import "modules/_posts";
+
 
 /* BEM Blocks -- realted p4  */
 @import "modules/_doc";
@@ -39,5 +40,9 @@
 @import "modules/_related-information";
 @import "modules/_attachments";
 @import "modules/_ccl-social";
+
+/* BEM Blocks -- realted p5  */
+@import "modules/_aside-nav";
+@import "modules/_posts-p5";
 
 @import "modules/_test";

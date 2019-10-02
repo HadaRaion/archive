@@ -140,106 +140,151 @@
 
 <!-- p03 검색목록 start -->
 <div class="main">
-   <div class="wrapper">
-      <section>
+   <div class="wrapper wrapper--top-space">
+      <section class="cate">
 <!-- 최상단 이동 버튼 start -->
 <a class="btn to-top" id="toTop" title="상단으로 이동"></a>
 <!-- 최상단 이동 버튼 end -->
 
-<!-- 상단 영역 start -->
-         <div class="align-top">
-<!-- 상단 검색 영역 start -->
-            <div class="search-box">
-               <form action="">
-                  <input type="text" placeholder="" name="search">
-                  <button type="submit">검색</button>
-               </form>
-            </div>
-<!-- 상단 검색 영역 end -->
-<!-- 상단 연관검색어 start -->
-            <div class="search-related">
-               <div class="search-related__title">연관검색어</div>
-               <ul class="search-related__tags">
-                  <li><a href="#">조국</a></li>
-                  <li><a href="#">법무부장관</a></li>
-                  <li><a href="#">청문회</a></li>
-                  <li><a href="#">고령화</a></li>
-                  <li><a href="#">소녀상</a></li>
-               </ul>
-            </div>
-<!-- 상단 연관검색어 end -->
-         </div>
-<!-- 상단 영역 end -->
 
 <!-- 왼쪽사이드 상세검색 영역 start -->
-         <aside class="search-condition">
-            <h2 class="search-condition__title">상세검색</h2>
 
-<!-- 왼쪽사이드 제목/내용/생산자/태그 검색 start -->
-            <h3>제목</h3>
-            <input class="" type="text" name="search">
-            <h3>내용</h3>
-            <input class="" type="text" name="search">
-            <h3>생산자</h3>
-            <input class="" type="text" name="search">
-            <h3>태그</h3>
-            <input class="" type="text" name="search">
-<!-- 왼쪽사이드 제목/내용/생산자/태그 검색 end -->
+<aside class="search-condition">
+      <h2 class="search-condition__title">기록물탐색</h2>
 
-<!-- 왼쪽사이드 생산일자 검색 start -->
-            <h3 class="search-condition__date">생산일자</h3>
-            <input class="" type="date" name="search"><span class="dash"> -</span>
-            <input class="" type="date" name="search">
-<!-- 왼쪽사이드 생산일자 검색 end -->
 
-<!-- 왼쪽사이드 저작권 검색 start -->
-            <h3 class="search-condition__ccl">CCL</h3>
 
-            <select id="ccl-select">
-                  <option value="" rel="ccl">해당없음</option>
-                  <option value="">저작권표시</option>
-                  <option value="">저작권표시-비영리</option>
-                  <option value="">저작권표시-변경금지</option>
-                  <option value="">저작권표시-동일조건 변경</option>
-            </select>
-<!-- 왼쪽사이드 저작권 검색 end -->
+      <nav class="side-nav">
+         <ul>
+            <li class="nav-main">
+               <input type="checkbox" id="A">
+               <label for="A">형태분류</label>
+               <div class="line-nav-main"></div>
+               <ul>
 
-<!-- 왼쪽사이드 공개구분 체크박스 start -->
-            <h3 class="search-checkbox">공개구분</h3>
-            <label class="checkbox-container">전체
-               <input type="radio" checked="checked" name="radio">
-               <span class="checkmark checkmark-radio"></span>
-            </label>
-            <label class="checkbox-container">공개
-               <input type="radio" name="radio">
-               <span class="checkmark checkmark-radio"></span>
-            </label>
-            <label class="checkbox-container">비공개
-               <input type="radio" name="radio">
-               <span class="checkmark checkmark-radio"></span>
-            </label>
-<!-- 왼쪽사이드 공개구분 체크박스 end -->
+                  <li>
+                     <div class="nav-sub">
+                        <input type="checkbox" id="A-a">
+                        <label for="A-a">도서/간행물류</label>
+                        <div class="line-nav-sub"></div>
+                        <ul>
+                           <li><a href="#" class="nav-menu">감옥으로부터의 사색</a></li>
+                           <li><a href="#" class="nav-menu">강의-나의 동양고전 독법</a></li>
+                           <li><a href="#" class="nav-menu">당록-신영복의 마지막 강의</a></li>
+                           <li><a href="#" class="nav-menu">나무야 나무야</a></li>
+                           <li><a href="#" class="nav-menu">더불어숲</a></li>
+                           <li><a href="#" class="nav-menu">청구회 추억</a></li>
+                           <li><a href="#" class="nav-menu">변방을 찾아서</a></li>
+                           <li><a href="#" class="nav-menu">처음처럼</a></li>
 
-<!-- 왼쪽사이드 파일포맷 체크박스 start -->
-            <h3 class="search-checkbox">파일포맷</h3>
-            <label class="checkbox-container">JPEG
-               <input type="checkbox" name="checkbox">
-               <span class="checkmark checkmark-checkbox"></span>
-            </label>
-            <label class="checkbox-container">PDF
-               <input type="checkbox" name="checkbox">
-               <span class="checkmark checkmark-checkbox"></span>
-            </label>
-            <label class="checkbox-container">MP4
-               <input type="checkbox" name="checkbox">
-               <span class="checkmark checkmark-checkbox"></span>
-            </label>
-<!-- 왼쪽사이드 파일포맷 체크박스 end -->
-         </aside>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="nav-sub">
+                        <input type="checkbox" id="A-b">
+                        <label for="A-b">문서류</label>
+                        <div class="line-nav-sub"></div>
+                        <ul>
+                           <li><a href="#" class="nav-menu">감옥으로부터의 사색</a></li>
+                           <li><a href="#" class="nav-menu">강의-나의 동양고전 독법</a></li>
+                           <li><a href="#" class="nav-menu">당록-신영복의 마지막 강의</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="nav-sub">
+                        <input type="checkbox" id="A-c">
+                        <label for="A-c">사진류</label>
+                        <div class="line-nav-sub"></div>
+                        <ul>
+                           <li><a href="#" class="nav-menu">감옥으로부터의 사색</a></li>
+                           <li><a href="#" class="nav-menu">강의-나의 동양고전 독법</a></li>
+                           <li><a href="#" class="nav-menu">당록-신영복의 마지막 강의</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="nav-sub">
+                        <input type="checkbox" id="A-d">
+                        <label for="A-d">시청각류</label>
+                        <div class="line-nav-sub"></div>
+                        <ul>
+                           <li><a href="#" class="nav-menu">감옥으로부터의 사색</a></li>
+                           <li><a href="#" class="nav-menu">강의-나의 동양고전 독법</a></li>
+                           <li><a href="#" class="nav-menu">당록-신영복의 마지막 강의</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="nav-sub">
+                        <input type="checkbox" id="A-e">
+                        <label for="A-e">박물류</label>
+                        <div class="line-nav-sub"></div>
+                        <ul>
+                           <li><a href="#" class="nav-menu">감옥으로부터의 사색</a></li>
+                           <li><a href="#" class="nav-menu">강의-나의 동양고전 독법</a></li>
+                           <li><a href="#" class="nav-menu">당록-신영복의 마지막 강의</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="nav-sub">
+                        <input type="checkbox" id="A-f">
+                        <label for="A-f">구술류</label>
+                        <div class="line-nav-sub"></div>
+                        <ul>
+                           <li><a href="#" class="nav-menu">감옥으로부터의 사색</a></li>
+                           <li><a href="#" class="nav-menu">강의-나의 동양고전 독법</a></li>
+                           <li><a href="#" class="nav-menu">당록-신영복의 마지막 강의</a></li>
+                        </ul>
+                     </div>
+                  </li>
+
+               </ul>
+            </li>
+
+            <li class="nav-main">
+               <input type="checkbox" id="B">
+               <label for="B">출처분류</label>
+               <div class="line-nav-main"></div>
+
+            </li>
+
+            <li class="nav-main">
+               <input type="checkbox" id="C">
+               <label for="C">주제분류</label>
+               <div class="line-nav-main"></div>
+
+            </li>
+
+            <li class="nav-main">
+               <input type="checkbox" id="D">
+               <label for="D">형태분류</label>
+               <div class="line-nav-main"></div>
+
+            </li>
+
+         </ul>
+      </nav>
+   </aside>
 <!-- 왼쪽사이드 상세검색 영역 end -->
 
 <!-- 오른쪽 콘텐츠 영역 start -->
          <div class="posts">
+
+<!-- 오른쪽 콘텐츠 영역 상단 분류 설명 start -->
+            <div class="category">
+               <div class="">
+                  <h5 class="category__title headline--15-bold">형태분류</h5>
+                  <h5 class="category__title headline--15-bold">도서간행물</h5>
+                  <h5 class="category__title headline--15-bold">당록-신여복의 마지막 강의</h5>
+                  <h5 class="category__title headline--15-bold">당록-신여복의 마지막 강의</h5>
+               </div>
+               <div class="category__caption">
+                  <p>징역 초년에 독방에서 허밍했던 노래가 영화의 주제곡이었습니다.</p>
+               </div>
+            </div>
+<!-- 오른쪽 콘텐츠 영역 상단 분류 설명 end -->
 
 <!-- 오른쪽 콘텐츠 영역 상단 start -->
             <div class="top-box">
@@ -295,10 +340,6 @@
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
                            </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
-                           </div>
                         </div>
 
                         <div class="post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
@@ -312,10 +353,6 @@
                            <div class="post__info">
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
-                           </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
                            </div>
                         </div>
 
@@ -332,10 +369,6 @@
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
                            </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
-                           </div>
                         </div>
 
                         <div class="post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
@@ -351,10 +384,6 @@
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
                            </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
-                           </div>
                         </div>
 
                         <div class="post__thumbnail"></div>
@@ -368,10 +397,6 @@
                            <div class="post__info">
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
-                           </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
                            </div>
                         </div>
 
@@ -387,10 +412,6 @@
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
                            </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
-                           </div>
                         </div>
 
                         <div class="post__thumbnail"></div>
@@ -405,15 +426,35 @@
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
                            </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
+                        </div>
+
+                        <div class="post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                     </a></li>
+                  
+                     <li><a href="#">
+                        <div class="post__wrapper">
+                           <h1 class="post__title headline--20">[영화]부베의 연인(La Ragazza Di Bube, Bebo's Girl)</h1>
+                           <p>"내가 연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었습니다. 징역 초년에 독방에 머문다 머문다 머문다</p>
+                           <div class="post__info">
+                              <span class="info info-name">김이슬</span>
+                              <span class="info info-date">2019. 7. 6</span>
                            </div>
                         </div>
 
                         <div class="post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
                      </a></li>
+                     <li><a href="#">
+                        <div class="post__wrapper">
+                           <h1 class="post__title headline--20">[영화]부베의 연인(La Ragazza Di Bube, Bebo's Girl)</h1>
+                           <p>"내가 연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었습니다. 징역 초년에 독방에 머문다 머문다 머문다</p>
+                           <div class="post__info">
+                              <span class="info info-name">김이슬</span>
+                              <span class="info info-date">2019. 7. 6</span>
+                           </div>
+                        </div>
 
+                        <div class="post__thumbnail" style="background: url(/temp/images/thumbnail-small.jpg)"></div>
+                     </a></li>
                   <li class="no-thumbnail"><a href="#">
 
                         <div class="post__wrapper">
@@ -422,10 +463,6 @@
                            <div class="post__info">
                               <span class="info info-name">김이슬</span>
                               <span class="info info-date">2019. 7. 6</span>
-                           </div>
-                           <div class="post__tags">
-                              <a class="btn-tag btn-tag-small">한신대학교</a>
-                              <a class="btn-tag btn-tag-small">기록</a>
                            </div>
                         </div>
 

@@ -11,7 +11,7 @@
       font-weight: 500;
       line-height: 35px;
       color: #000000;
-
+      border-bottom: 2px solid #000;
    }
 
    h3 {
@@ -66,7 +66,8 @@
    }
 
    &__ccl {
-      margin: 40px 0 29px !important;
+      margin: 40px 0 7px !important;
+      border-bottom: none;
    }
 
    .search-checkbox {

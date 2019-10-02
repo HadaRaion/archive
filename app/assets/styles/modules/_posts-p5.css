@@ -1,0 +1,32 @@
+
+.category {
+   margin-top: 10px;
+   
+   &__title {
+      color: #000;
+      display: inline-block;
+      line-height: 25px;
+
+      &::after {
+         content: '\e93f';
+         font-family: 'xeicon';
+         padding: 0 4px;
+         position: relative;
+         top: 1px;
+      }
+
+      &:last-child::after {
+         content: '';
+      }
+   }
+
+   &__caption {
+      margin: 10px 0 50px;
+      font-size: 15px;
+      line-height: 22px;
+   }
+}
+.cate .post .post__thumbnail {
+   top: 15px;
+}
+

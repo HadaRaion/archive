@@ -1,0 +1,131 @@
+.category-nav {
+   width: 155px;
+   margin-right: 46px;
+   display: block;
+   float: left;
+
+   &__title {
+      height: 35px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 35px;
+      color: #000000;
+      border-bottom: 2px solid #000;
+   }
+}
+
+
+
+
+
+.side-nav {
+   margin-top: 10px;
+   
+   .nav-main ul, input[type="checkbox"] {
+      display:none;
+   }
+
+   .nav-main input:checked ~ ul {
+      display: block;
+   }
+
+   li {
+      list-style: none;
+      position: relative;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+   }
+
+   label::after {
+      content: "\e936";
+      font-family: xeicon;
+      float: right;
+   }
+
+   .nav-main input:checked ~ label::after {
+      content: "\e930";
+      color: #2da3ff;
+   }
+
+   .nav-main > label::after {
+      content: "\e942";
+      font-family: xeicon;
+   }
+
+   .nav-main > input:checked ~ label::after {
+      content: "\e945";
+      font-family: xeicon;
+   }
+
+   .nav-main {
+      font-size: 16px;
+      font-weight: bold;
+      color: #a7a7a7;
+      line-height: 2.5em;
+   }
+
+   .nav-main input:checked ~ label {
+      color: #2da3ff;
+   }
+
+   .nav-main > ul > li:first-child {
+      margin-top: 8px;
+   }
+
+   .nav-main > ul > li:last-child {
+      margin-bottom: 10px;
+   }
+
+   .nav-sub {
+      font-size: 15px;
+      font-weight: normal;
+      color: #707070;
+      line-height: 2.2em;
+
+      & > label {
+         padding-left: 15px;
+      }
+   }
+
+   .nav-sub > ul > li {
+      line-height: 1.9em;
+      margin-left: 15px;
+
+   }
+
+   .nav-sub > ul > li:first-child {
+      margin-top: 8px;
+   }
+   .nav-sub > ul > li:last-child {
+      margin-bottom: 10px;
+   }
+   .nav-menu {
+      font-size: 12px;
+   }
+
+   .nav-menu.active {
+      color: #2da3ff;
+   }
+
+   .nav-menu.active::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: #2da3ff;
+      margin-right: 8px;
+      transform: translateY(-1px);
+   }
+}
+
+.line-nav-main {
+   border-bottom: 1px solid #a7a7a7;
+}
+
+.line-nav-sub {
+   border-bottom: 1px solid #ccc;
+   margin-left:15px;
+}
