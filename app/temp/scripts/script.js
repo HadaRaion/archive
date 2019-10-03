@@ -83,3 +83,26 @@ for (var i = 0; i < sideNavMenu.length; i++) {
   };
   
 }
+
+
+// 사이드 메뉴
+var typeNavMenu = $(".type-of-term");
+
+for (var i = 0; i < typeNavMenu.length; i++) {
+
+    typeNavMenu[i].onclick = function() {
+
+        typeNavMenu.removeClass("active");
+        this.classList.add("active");
+  };
+  
+}
+
+
+// 출처 버튼
+$(".btn-toggle-ref").on("click", function() {
+    $(this).closest('tr').nextUntil(".toggle-ref").toggleClass("active")
+    $(this).toggleClass("active")
+})
+
+

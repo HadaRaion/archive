@@ -1,8 +1,4 @@
 .category-nav {
-   width: 155px;
-   margin-right: 46px;
-   display: block;
-   float: left;
 
    &__title {
       height: 35px;

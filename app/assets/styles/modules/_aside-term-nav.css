@@ -1,0 +1,88 @@
+.term-nav {
+   &__title {
+      height: 35px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 35px;
+      color: #000000;
+      border-bottom: 2px solid #000;
+   }
+
+   li {
+      font-size: 16px;
+      font-weight: bold;
+      color: #a7a7a7;
+      line-height: 2.5em;
+      border-bottom: 1px solid #a7a7a7;
+      position: relative;
+   }
+
+   .type-of-term {
+
+
+      & > i {
+         display: inline-block;
+         width:14px;
+         height: 22px;
+         margin-right: 7px;
+         transform: translateY(4px);
+
+         &.icon-all {
+            width: 0;
+            margin-left: 0px;
+            margin-right: 0px;
+         }
+
+         &.icon-user {
+            background: url(../images/icons/icon-user-gray.svg) no-repeat center center;
+            background-size: 14px 22px;
+         }
+         &.icon-flag {
+            background: url(../images/icons/icon-flag-gray.svg) no-repeat center center;
+            background-size: 14px 22px;
+         }
+         &.icon-door {
+            background: url(../images/icons/icon-door-gray.svg) no-repeat center center;
+            background-size: 14px 22px;
+         }
+      }
+
+      
+   }
+
+   .type-of-term.active {
+      color: $boxBlue;
+      margin-left: 20px;
+      animation-name: moveRight;
+      animation-duration: 0.5s;
+      animation-timing-function: ease;
+
+      & > i {
+ 
+         &.icon-all {
+            width: 0;
+            margin-left: 0px;
+            margin-right: 0px;
+         }
+         &.icon-user {
+            background: url(../images/icons/icon-user-blue.svg) no-repeat center center;
+            background-size: 14px 22px;
+         }
+         &.icon-flag {
+            background: url(../images/icons/icon-flag-blue.svg) no-repeat center center;
+            background-size: 14px 22px;
+         }
+         &.icon-door {
+            background: url(../images/icons/icon-door-blue.svg) no-repeat center center;
+            background-size: 14px 22px;
+         }
+      }
+   }
+
+}
+
+@keyframes moveRight {
+   from {margin-left: 0px;}
+   to {margin-left: 20px;}
+}
+

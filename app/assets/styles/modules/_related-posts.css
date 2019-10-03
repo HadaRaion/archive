@@ -1,0 +1,57 @@
+
+.related-posts {
+   margin-top: 90px;
+
+   &__title{
+      font-size: 14px;
+      font-weight: bold;
+      color: #000;
+      text-align: center;
+      border-bottom: solid 4px #000;
+      padding-bottom: 12px;
+   }
+
+   &__wrapper {
+      width: calc(100% - 202px);
+      margin: 33px auto 0;
+
+      ul {
+         margin-right: -12px;
+      }
+      
+
+      li {
+         width: 190px;
+         float: left;
+         margin-right: 12px;
+         margin-bottom: 40px;
+         border-bottom: none !important;
+
+         h3 {
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+            word-wrap:normal;
+            margin: 14px 0 2px 0;
+         }   
+      }
+   }
+
+   &__thumbnail {
+      width: 190px;
+      height: 136px;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      background-size: cover !important;
+   }
+
+   &__no-thumbnail {
+      width: 190px;
+      height: 136px;
+      background: url(../images/no-img.jpg);
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      background-size: cover !important;
+   }
+   
+}

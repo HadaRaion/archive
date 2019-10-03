@@ -26,3 +26,10 @@
 	padding-bottom: 92px;
 	@mixin clearfix;
 }
+
+aside {
+	width: 155px;
+   margin-right: 46px;
+   display: block;
+   float: left;
+}

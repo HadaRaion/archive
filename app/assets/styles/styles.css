@@ -25,6 +25,7 @@
 @import "modules/_recent-docs";
 @import "modules/_existing-docs";
 @import "modules/_search-box";
+@import "modules/_table";
 
 /* BEM Blocks -- realted p3  */
 @import "modules/_posts-p3";
@@ -44,5 +45,13 @@
 /* BEM Blocks -- realted p5  */
 @import "modules/_aside-nav";
 @import "modules/_posts-p5";
+
+/* BEM Blocks -- realted p8  */
+@import "modules/_aside-term-nav";
+@import "modules/_terms";
+
+/* BEM Blocks -- realted p9  */
+@import "modules/_dic";
+@import "modules/_related-posts";
 
 @import "modules/_test";
