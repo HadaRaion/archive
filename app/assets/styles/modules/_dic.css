@@ -1,0 +1,239 @@
+.dic {
+   padding-top: 60px;
+
+   &__title {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+   }
+
+
+   &__info {
+      text-align: center;
+      margin-top: 7px;
+
+      .info-name {
+         margin-right: 18px;
+      }
+   }
+
+   &__detail {
+      width: calc(100% - 200px);
+      margin: 28px auto 0;
+   }
+   
+   .dic-detail {
+      width: 100%;
+      line-height: 25px;
+      border-top: solid 2px #000000;
+
+
+      /* dic-detail table layout */
+      table {
+         width: 100%;
+
+         tr, td {
+            border-bottom: none;
+         }
+      }
+      
+      tr {
+         border-bottom: solid 1px #d6d6d6;
+
+      }
+
+      th {
+         border: none;
+      }
+
+      th, td {
+         padding : 10px 0;
+      }
+
+      .career {
+         tr.toggle-ref {
+            border-top: solid 1px #d6d6d6;
+         }
+
+         tr:first-child {
+            border-top: none;
+         }
+      }
+
+      .references {
+         background: #ececec;
+
+         tbody {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+         }
+
+         th {
+            width: 50px;
+            vertical-align: top;
+         }
+
+         tr {
+            display: inline-block;
+            width: 100%;
+            margin-bottom: 2px;
+         }
+
+         th, td {
+            padding : 0;
+         }
+
+         & tr:first-child > th, & tr:first-child > td {
+         }
+
+         & tr:last-child {
+            border-bottom: none;
+         }
+      }
+
+      td.no-padding{
+         padding: 0;
+      }
+
+      .show-hide > td {
+         padding-top: 0;
+      }
+
+      .title {
+         width: 80px;
+         vertical-align: top;
+      }
+
+      .toggle-ref > th {
+         width: 180px;
+      }
+
+      .show-hide {
+         display: none;
+      }
+      
+      .show-hide.active {
+         display: table-row;
+      }
+
+
+      /* dic-detail table text */
+      .toggle-ref> th {
+         font-size: 15px;
+         color: #707070;
+         font-weight: 400;
+      }
+
+      .references th {
+         font-size: 12px;
+         color: #707070;
+         font-weight: 500;
+      }
+   }
+
+   .btn-toggle-ref {
+      width: 30px;
+      height: 16px;
+      border-radius: 3px;
+      background-color: #a7a7a7;
+      color: #fff;
+      font-size: 10px;
+      margin-left: 14px;
+      transform: translateY(-1px);
+
+      &.active{
+         background-color: $boxBlue;
+      }
+   }
+
+   .references {
+
+      &__doc {
+         
+      }
+      &__doc > td.references__doc__title::after {
+         content: "\e930";
+         font-family: 'xeicon';
+         display: inline-block;
+         margin: 0 5px;
+         transform: rotate(90deg) translateX(1px);
+      }
+
+      &__file > td::after {
+         content: "\eb7c";
+         font-family: 'xeicon';
+         margin: 0 10px;
+      }
+      &__etc td {
+         text-decoration: underline;
+      }
+
+      &__etc > td::after {
+         content: "\e930";
+         font-family: 'xeicon';
+         display: inline-block;
+         margin: 0 5px;
+         transform: rotate(90deg) translateX(1px);
+      }
+
+      tr.line{
+         height: 1px;
+         margin: 1px 0 2px;
+         padding: 0;
+         display: block  !important;
+         border-bottom: 1px solid #d6d6d6 !important;
+      }
+   }
+   
+   .half-size {
+
+      width: 50%;
+      display: block;
+      float: left;
+
+      tbody{
+         display: block;
+         width: 100%;
+      }
+
+      th.title {
+         width: 80px;
+      vertical-align: top;
+      }
+
+      th, td {
+         padding: 22px 0;
+         border: none;
+      }
+
+      tr {
+         display: block;
+         width: 100%;
+         line-height: 25px;
+         border-bottom: 1px solid #d6d6d6;
+      }
+
+      td::after {
+         content: ',';
+         margin-right: 10px;
+      }
+
+      td.exist a {
+         height: 27px;
+         padding: 2px 13px;
+         border-radius: 4px;
+         background-color: #ececec;
+      }
+   }
+
+
+   .related-posts{
+      padding-top: 100px;
+   }
+   
+   .ccl-social {
+      padding-right: 100px;
+   }
+
+}

@@ -1,0 +1,40 @@
+.terms .posts {
+   width: calc(100% - 305px);
+}
+
+.terms .align-top {
+   padding-right: 102px;
+   margin-bottom: 50px;
+
+   ::placeholder {
+      font-size: 11px;
+      color: #a7a7a7;
+      line-height: 30px;
+      /*  transform: translateY(-3px); */
+     
+   }
+}
+
+.term-board {
+
+   i {
+      display: inline-block;
+      width:13px;
+      height: 20px;
+      transform: translateY(1px);
+      margin-left: 6px;
+
+      &.icon-user {
+         background: url(../images/icons/icon-user-gray.svg) no-repeat center center;
+         background-size: 13px 20px;
+      }
+      &.icon-flag {
+         background: url(../images/icons/icon-flag-gray.svg) no-repeat center center;
+         background-size: 13px 20px;
+      }
+      &.icon-door {
+         background: url(../images/icons/icon-door-gray.svg) no-repeat center center;
+         background-size: 13px 20px;
+      }
+   }
+}
