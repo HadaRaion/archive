@@ -1,0 +1,55 @@
+.series-contents {
+   padding-top: 60px;
+  
+
+   &__container {
+      width: calc(100% - 200px);
+      margin: 0 auto;
+   }
+
+   &__cat {
+      font-size: 15px;
+      font-weight: bold;
+      color: $boxBlue;
+      text-align: center;
+      line-height: 25px;
+      
+   }
+   &__title {
+      font-size: 26px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+      line-height: 36px
+   }
+
+   &__info {
+      text-align: center;
+      margin-top: 7px;
+
+      .info-name {
+         margin-right: 18px;
+      }
+   }
+
+   &__img {
+      width: 687px;
+      margin: 0 auto 38px;
+
+      > img{
+         width: 100%;
+      }
+   }
+
+   &__text {
+      margin-top: 38px;
+
+      p {
+         margin-bottom: 38px;
+      }
+   }
+
+   .ccl-social {
+      padding-right: 100px;
+   }
+}

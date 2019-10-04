@@ -41,6 +41,7 @@
 @import "modules/_related-information";
 @import "modules/_attachments";
 @import "modules/_ccl-social";
+@import "modules/_sign-in";
 
 /* BEM Blocks -- realted p5  */
 @import "modules/_aside-nav";
@@ -53,5 +54,12 @@
 /* BEM Blocks -- realted p9  */
 @import "modules/_dic";
 @import "modules/_related-posts";
+
+/* BEM Blocks -- realted p11  */
+@import "modules/_introduction";
+
+/* BEM Blocks -- realted p15  */
+@import "modules/_series";
+@import "modules/_series-contents";
 
 @import "modules/_test";

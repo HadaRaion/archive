@@ -1,0 +1,56 @@
+.signin {
+   width: 577px;
+   height: 283px;
+   background-color: #ececec;
+   margin: 93px auto;
+
+   form{
+      padding: 93px;
+   }
+
+   &__contents{
+      width: 290px;
+      float: left;
+ 
+      label {
+         display: block;
+         width: 75px;
+         height: 45px;
+         line-height: 45px;
+         float: left;
+      }
+
+      input {
+         outline: none;
+         width: 212px;
+         height: 45px;
+         border: none;
+         background: #fff;
+         padding-left: 10px;
+         
+      }
+
+
+   }
+
+   &__username {
+      
+   }
+
+   &__pw {
+      margin-top: 6px;
+   }
+
+   .signin__btn {
+      display: block;
+      width: 88px;
+      height: 96px;
+      border-radius: 5px;
+      background-color: #a7a7a7;
+      line-height: 96px;
+      color: #fff;
+      text-align: center;
+      float: right;
+      
+   }
+}
