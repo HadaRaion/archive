@@ -85,7 +85,7 @@ for (var i = 0; i < sideNavMenu.length; i++) {
 }
 
 
-// 사이드 메뉴
+// 용어 메뉴
 var typeNavMenu = $(".type-of-term");
 
 for (var i = 0; i < typeNavMenu.length; i++) {
@@ -106,3 +106,36 @@ $(".btn-toggle-ref").on("click", function() {
 })
 
 
+// 게시판 메뉴
+var boardMenu = $(".type-of-board");
+
+for (var i = 0; i < boardMenu.length; i++) {
+
+    boardMenu[i].onclick = function() {
+
+        boardMenu.removeClass("active");
+        this.classList.add("active");
+  };
+  
+}
+
+//첨부파일 추가
+$(".btn-plus").click(function(){
+    $(".board-box__attachments").prepend('<li><div class="board-box__th"></div><div class="board-box__th board-box__attachments__th"> <i class="xi-attachment"> </i> 첨부파일</div><div class="board-box__td board-box__attachments__td"><input type="file"><button class="btn btn-minus" title="추가"><i class="xi-minus-min"></i></button></div></li>');
+    return false;
+})
+
+//첨부파일 취소
+$(".btn-del").click(function(){
+    $(".board-box__attachments input").value = "";
+})
+
+//첨부파일 추가취소
+$(".board-box__attachments").on("click", ".btn-minus", function(){
+    $(this).closest("li").remove()
+})
+
+//전페이지로 돌아가기
+$(".btn.cancel").click(function() {
+    window.history.back();
+});

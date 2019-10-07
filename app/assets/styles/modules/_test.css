@@ -1,4 +1,13 @@
 
+.test {
+   i {
+     display: block;
+     margin-right: 20px;
+     font-size : 20px;
+   }
+}
+
+
 div.table {
   display: table;
   width: 400px;
@@ -35,7 +44,3 @@ div.colspan>div>div {
   border: 2px solid yellow;
   color:lemonchiffon
 }
-
-
-
-

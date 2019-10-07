@@ -17,7 +17,7 @@
 @import "modules/_select-box";
 @import "modules/_pageBtn.css";
 
-/* BEM Blocks -- realted index  */
+/* BEM Blocks -- related index  */
 @import "modules/_hero-slider";
 @import "modules/_posts-title";
 @import "modules/_line";
@@ -27,13 +27,13 @@
 @import "modules/_search-box";
 @import "modules/_table";
 
-/* BEM Blocks -- realted p3  */
+/* BEM Blocks -- related p3  */
 @import "modules/_posts-p3";
 @import "modules/_aside-search-condition";
 @import "modules/_posts";
 
 
-/* BEM Blocks -- realted p4  */
+/* BEM Blocks -- related p4  */
 @import "modules/_doc";
 @import "modules/_doc-detail-slider";
 @import "modules/_pdf";
@@ -43,23 +43,32 @@
 @import "modules/_ccl-social";
 @import "modules/_sign-in";
 
-/* BEM Blocks -- realted p5  */
+/* BEM Blocks -- related p5  */
 @import "modules/_aside-nav";
 @import "modules/_posts-p5";
 
-/* BEM Blocks -- realted p8  */
+/* BEM Blocks -- related p8  */
 @import "modules/_aside-term-nav";
 @import "modules/_terms";
 
-/* BEM Blocks -- realted p9  */
+/* BEM Blocks -- related p9  */
 @import "modules/_dic";
 @import "modules/_related-posts";
 
-/* BEM Blocks -- realted p11  */
+/* BEM Blocks -- related p11  */
 @import "modules/_introduction";
 
-/* BEM Blocks -- realted p15  */
+/* BEM Blocks -- related p15  */
 @import "modules/_series";
 @import "modules/_series-contents";
+
+
+/* BEM Blocks -- related p12  */
+@import "modules/_aside-board-nav";
+@import "modules/_board";
+@import "modules/_board-page";
+@import "modules/_board-write";
+@import "modules/_board-box";
+@import "modules/_comment";
 
 @import "modules/_test";

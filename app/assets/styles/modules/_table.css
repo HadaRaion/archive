@@ -18,13 +18,4 @@ td {
    font-size: 15px;
 }
 
-.term-board {
-   th, td {
-      height: 38px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      word-wrap: normal;
-   }
-}
 

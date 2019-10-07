@@ -73,6 +73,14 @@
    &-date::before {
       content: "\e9a0";
    }
+
+   &-view::before {
+      content: "\e950";
+   }
+
+   &-download::before {
+      content: "\eb7c";
+   }
 }
 
 .li-title-dot {

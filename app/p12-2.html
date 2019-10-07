@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="keyword, keyword, keyword">
+   <meta name="description" content="webpage explanation" />
+   <link rel="shortcut icon" href="/favicon">
+   <title>아카이브</title>
+
+   <!--[if lt IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+<!-- Custom Style  -->
+   <link rel="stylesheet" href="temp/styles/styles.css">
+
+<!-- Script Library  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+   <script type="text/javascript" src="temp/scripts/lib/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+   
+</head>
+
+<body>
+<!-- 헤더 start -->
+   <header class="site-header">
+      <div class="site-header__top-content">
+         <div class="wrapper">
+<!-- 로고영역 start -->
+            <div class="site-header__top-content__logo">
+                  <a href="/">로고</a>
+            </div>
+<!-- 로고영역 end -->
+<!-- 탑 메뉴 start -->
+            <div class="site-header__top-content__menu">
+               <ul>
+                  <li><a href="/p11.html">아카이브소개</a></li>
+                  <li><a href="/p15.html">기획</a></li>
+                  <li id="boardDropdown"><a href="#" class="dropBoardMenu">게시판</a>
+                     <ul class="dropdown-content">
+                           <li><a href="/p12.html">전체</a></li>
+                           <li><a href="#">공지사항</a></li>
+                           <li><a href="#">게시판1</a></li>
+                           <li><a href="#">게시판2</a><li>
+                           <li><a href="#">게시판이름이길어요</a><li>
+                           <li><a href="#">게시판2</a><li>
+                     </ul>
+                  </li>
+                  <li class="search"><a href="/p03.html">검색</a></li>
+                  <li class="login"><a href="/p01.html">로그아웃</a></li>
+               </ul>
+               
+            </div>
+<!-- 탑 메뉴 end -->
+         </div>
+      </div>
+<!-- 네비게이션 메뉴 start -->
+      <div class="site-header__nav-content">
+         <nav>
+            <div class="wrapper">
+               <ul class="site-header__nav-content__menu">
+                     
+                  <li class="site-header__nav-content__menu-list first" data-order="1">
+                     <i class="site-header__nav-content__menu-list__arrow active"></i>
+                     <a href="#">형태분류</a>
+                     <ul class="active">
+                        <li><a href="#">도서/간행물</a></li>
+                        <li><a href="#">문서류</a></li>
+                        <li><a href="#">사진류</a></li>
+                        <li><a href="#">시청각류</a></li>
+                        <li><a href="#">박물류</a></li>
+                        <li><a href="#">신문류</a></li>
+                        <li><a href="#">구술류</a></li>
+                     </ul>
+                  </li>
+                  <li class="site-header__nav-content__menu-list notfirst" data-idx="2">
+                     <i class="site-header__nav-content__menu-list__arrow"></i>
+                     <a href="#">출처분류</a>
+                     <ul>
+                        <li><a href="#">가족</a></li>
+                        <li><a href="#">지인</a></li>
+                        <li><a href="#">성공회대학교</a></li>
+                        <li><a href="#">사단법인 더불어숲</a></li>
+                        <li><a href="#">도서출판 돌베개</a></li>
+                        <li><a href="#">단체행사</a></li>
+                        <li><a href="#">신영복선생님의 활동</a></li>
+                     </ul>
+                  </li>
+                  <li class="site-header__nav-content__menu-list notfirst" data-idx="3">
+                     <i class="site-header__nav-content__menu-list__arrow"></i>
+                     <a href="#">주제분류</a>
+                     <ul>
+                        <li><a href="#">공통</a></li>
+                        <li><a href="#">평가</a></li>
+                        <li><a href="#">분류/기술</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">경영</a></li>
+                        <li><a href="#">전자기록</a></li>
+                        <li><a href="#">보존</a></li>
+                        <li><a href="#">국내법</a></li>
+                        <li><a href="#">해외법</a></li>
+                     </ul>
+                  </li>
+                  <li class="site-header__nav-content__menu-list notfirst" data-idx="4">
+                     <i class="site-header__nav-content__menu-list__arrow"></i>
+                     <a href="#">시대분류</a>
+                     <ul>
+                        <li><a href="#">갑오개혁 이전</a></li>
+                        <li><a href="#">갑오개혁~대한제국</a></li>
+                        <li><a href="#">일제강점기</a></li>
+                        <li><a href="#">해방 이후</a></li>
+                     </ul>
+                  </li>
+                     
+                  
+               </ul>
+               <ul class="site-header__nav-content__btn">
+                     <li class="btn"><a href="/p08.html">사전</a></li>
+                     <li class="btn"><a href="#">타임라인</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+<!-- 네비게이션 메뉴 end -->
+      <div class="site-header__backgoround">
+         <div class="site-header__backgoround__blue"></div>
+         <div class="site-header__backgoround__black"></div>
+      </div>
+   </header> 
+<!-- 헤더 end --> 
+ 
+<!-- p12-2 게시판 start -->
+<div class="main">
+    <div class="wrapper">
+        <section class="board-write">
+
+<!-- 왼쪽사이드 게시판 메뉴 start -->
+            <aside class="board-nav">
+                <h2 class="board-nav__title">게시판</h2>
+
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="type-of-board active"><i class="icon-all"></i>전체</a></li>
+                        <li><a href="#" class="type-of-board">공지사항</a></li>
+                        <li><a href="#" class="type-of-board">게시판 1</a></li>
+                        <li><a href="#" class="type-of-board">게시판 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+<!-- 왼쪽사이드 게시판 메뉴 end -->
+
+<!-- 오른쪽 콘텐츠 영역 start -->
+            <div class="board-write__area">
+
+<!-- 오른쪽 콘텐츠 영역 상단 여백 start -->
+                <div class="top-box">
+                </div>
+<!-- 오른쪽 콘텐츠 영역 상단 여백 end -->
+
+<!-- 글쓰기 박스 start -->
+                <form class="board-box">
+
+<!-- 글쓰기 박스 - 작성자 + 비밀번호 start -->
+                    <ul class="">
+                        <li class="board-box__tr-half">
+                            <div class="board-box__th li-title-dot">작성자</div>
+                     <div class="board-box__td less-padding">
+                                <input type="text" id="" name="" value="">
+                            </div>
+                        </li>
+
+                        <li class="board-box__tr-half">
+                            <div class="board-box__th li-title-dot">비밀번호</div>
+                     <div class=" board-box__td less-padding">
+                                <input type="password" id="" name="" value="">
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 작성자 + 비밀번호 end -->
+
+<!-- 글쓰기 박스 - 비밀구분 start -->
+                    <ul class="">
+                        <li>
+                            <div class="board-box__th li-title-dot">비밀구분</div>
+                     <div class=" board-box__td">
+                                <label class="checkbox-container">공개
+                                    <input type="radio" checked="checked" name="radio" value="">
+                                    <span class="checkmark checkmark-radio"></span>
+                                </label>
+                                <label class="checkbox-container">비밀
+                                    <input type="radio" name="radio" value="">
+                                    <span class="checkmark checkmark-radio"></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 비밀구분 end -->
+
+<!-- 글쓰기 박스 - 제목 start -->
+                    <ul class="">
+                        <li>
+                            <div class="board-box__th li-title-dot">제목</div>
+                     <div class=" board-box__td board-box__td-title less-padding">
+                                <input type="text" id="" name="" value="">
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 제목 end -->
+
+<!-- 글쓰기 박스 - 텍스트 start -->
+                    <ul class="board-box__text">
+                        <li>
+                            <div class="board-box__th li-title-dot">내용</div>
+                            <div class="board-box__td">
+                                <textarea name="board_content" id="ir1" class="board_content" style="display: none;"></textarea>
+
+<!-- 글쓰기 박스 - 텍스트 - 스마트에디터 start -->
+                                <script type="text/javascript">
+                                    var oEditors = [];
+                                    nhn.husky.EZCreator.createInIFrame({
+                                        oAppRef: oEditors,
+                                        elPlaceHolder: "ir1",
+                                        sSkinURI: "temp/scripts/lib/se2/SmartEditor2Skin.html",
+                                        fCreator: "createSEditor2"
+                                    });
+                                </script>
+<!-- 글쓰기 박스 - 텍스트 - 스마트에디터 end -->
+
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 텍스트 end -->
+
+<!-- 글쓰기 박스 - 첨부파일 start -->
+                    <ul class="board-box__attachments">
+                        <li>
+                            <div class="board-box__th"></div>
+                            <div class="board-box__th board-box__attachments__th"> <i class="xi-attachment"> </i> 첨부파일</div>
+                            <div class="board-box__td board-box__attachments__td">
+                                <input type="file">
+                                <button class="btn btn-plus" title="추가"><i class="xi-plus-min"></i></button>
+                                <button class="btn btn-del" title="삭제"><i class="xi-trash"></i></button>
+                            </div>
+                        </li>
+
+                    </ul>
+<!-- 글쓰기 박스 - 첨부파일 end -->
+
+                </form>
+<!-- 글쓰기 박스 end -->
+
+ <!-- 글쓰기 하단 메뉴 start -->
+                <div class="board-write__area__buttons">
+                    <a class="btn btn-dark cancel" href="#"><i class="xi-close-min"></i>취소</a>
+                    <a class="btn btn-dark save" href="#"><i class="xi-check-min"></i>저장</a>
+                    <a class="btn btn-dark to-list" href="/p12.html" title="목록으로가기"><i class="xi-bars"></i></a>
+                </div>
+ <!-- 글쓰기 하단 메뉴 end -->   
+
+            </div>
+<!-- 오른쪽 콘텐츠 영역 end -->
+
+        </section>
+    </div>
+</div>
+<!-- p12-2 게시판 end -->
+<!-- 푸터 시작 -->
+<footer class="site-footer">
+   <div class="site-footer__links">
+      <div class="wrapper">
+
+<!-- 아카이브소개 시작 -->
+         <div class="site-footer__links__introduction">
+
+               <h4 class="">
+                  <a href="/p11.html">아카이브 소개</a></h4>
+               <p>국내 기록학계의 역사를 확인할 수 있는 유의미한 기록들을 제공하여, 기록학 분야에 대한 이해를 돕고 기록관리의 중요성을 널리 알리고자 합니다.</p>
+ 
+         </div>
+<!-- 아카이브소개 끝 -->
+
+<!-- 최근소개 시작 -->
+         <div class="site-footer__links__recent">
+            <h4 class="">최근 소식</h4>
+            <p><a href="/p13.html">기록학 아카이브를 오픈합니다. 
+            <span class="date">2019. 8. 27</span></a></p>
+         </div>
+<!-- 최근소개 끝 -->
+
+<!-- 유관기관 시작 -->
+         <div class="site-footer__links__related">
+            <h4 class="">유관기관</h4>
+            <ul>
+               <li><a href="#"> 아카이브센터 </a></li>
+               <li><a href="#"> 국가기록원 </a></li>
+               <li><a href="#"> 서울기록원 </a></li>
+               <li><a href="#"> 한국기록학회 </a></li>
+               <li><a href="#"> 한국기록관리학회 </a></li>
+               <li><a href="#"> 한국기록전문가협회 </a></li>
+            </ul>
+         </div>
+<!-- 유관기관 끝 -->
+      </div>
+   </div>
+   <div class="site-footer__footer-address">
+      <address>© Copyright(C) 2017-2019 아카이브센터 all rights reserved.</address>
+   </div>
+</footer>
+<!-- 푸터 끝-->
+
+<script src="temp/scripts/script.js"></script>
+<script src="temp/scripts/scripts.js"></script>
+
+</body>
+
+</html>

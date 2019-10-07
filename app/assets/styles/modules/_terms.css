@@ -17,6 +17,14 @@
 
 .term-board {
 
+   th, td {
+      height: 38px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+   }
+
    i {
       display: inline-block;
       width:13px;
@@ -38,3 +46,4 @@
       }
    }
 }
+

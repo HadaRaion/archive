@@ -114,3 +114,33 @@
    background: url(../images/icons/icon-social-share.svg) no-repeat;
    background-size: 32px 26px;
 }
+
+.btn {
+   display: inline-block;
+   position: relative;
+   font-size: 12px;
+   font-weight: 500;
+   height: 30px;
+   line-height: 30px;
+   border-radius: 3px;
+   padding: 0 10px 0 8px;
+
+   i {
+      font-size: 15px;
+      transform: translateY(2px);
+      margin-right: 5px;
+      color:  #a7a7a7;
+   }
+
+   &-light {
+      border: 1px solid #4b4b4b;
+      height: 31px;
+      color: #4b4b4b;
+   }
+
+   &-dark {
+      background-color: #4b4b4b;
+      color: #fff;
+   }
+ 
+}

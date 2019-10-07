@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta name="keywords" content="keyword, keyword, keyword">
+   <meta name="description" content="webpage explanation" />
+   <link rel="shortcut icon" href="/favicon">
+   <title>아카이브</title>
+
+   <!--[if lt IE 9]>
+  <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+<!-- Custom Style  -->
+   <link rel="stylesheet" href="temp/styles/styles.css">
+
+<!-- Script Library  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+   <script type="text/javascript" src="temp/scripts/lib/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
+   
+</head>
+
+<body>
+<!-- 헤더 start -->
+   <header class="site-header">
+      <div class="site-header__top-content">
+         <div class="wrapper">
+<!-- 로고영역 start -->
+            <div class="site-header__top-content__logo">
+                  <a href="/">로고</a>
+            </div>
+<!-- 로고영역 end -->
+<!-- 탑 메뉴 start -->
+            <div class="site-header__top-content__menu">
+               <ul>
+                  <li><a href="/p11.html">아카이브소개</a></li>
+                  <li><a href="/p15.html">기획</a></li>
+                  <li id="boardDropdown"><a href="#" class="dropBoardMenu">게시판</a>
+                     <ul class="dropdown-content">
+                           <li><a href="/p12.html">전체</a></li>
+                           <li><a href="#">공지사항</a></li>
+                           <li><a href="#">게시판1</a></li>
+                           <li><a href="#">게시판2</a><li>
+                           <li><a href="#">게시판이름이길어요</a><li>
+                           <li><a href="#">게시판2</a><li>
+                     </ul>
+                  </li>
+                  <li class="search"><a href="/p03.html">검색</a></li>
+                  <li class="login"><a href="/p01.html">로그아웃</a></li>
+               </ul>
+               
+            </div>
+<!-- 탑 메뉴 end -->
+         </div>
+      </div>
+<!-- 네비게이션 메뉴 start -->
+      <div class="site-header__nav-content">
+         <nav>
+            <div class="wrapper">
+               <ul class="site-header__nav-content__menu">
+                     
+                  <li class="site-header__nav-content__menu-list first" data-order="1">
+                     <i class="site-header__nav-content__menu-list__arrow active"></i>
+                     <a href="#">형태분류</a>
+                     <ul class="active">
+                        <li><a href="#">도서/간행물</a></li>
+                        <li><a href="#">문서류</a></li>
+                        <li><a href="#">사진류</a></li>
+                        <li><a href="#">시청각류</a></li>
+                        <li><a href="#">박물류</a></li>
+                        <li><a href="#">신문류</a></li>
+                        <li><a href="#">구술류</a></li>
+                     </ul>
+                  </li>
+                  <li class="site-header__nav-content__menu-list notfirst" data-idx="2">
+                     <i class="site-header__nav-content__menu-list__arrow"></i>
+                     <a href="#">출처분류</a>
+                     <ul>
+                        <li><a href="#">가족</a></li>
+                        <li><a href="#">지인</a></li>
+                        <li><a href="#">성공회대학교</a></li>
+                        <li><a href="#">사단법인 더불어숲</a></li>
+                        <li><a href="#">도서출판 돌베개</a></li>
+                        <li><a href="#">단체행사</a></li>
+                        <li><a href="#">신영복선생님의 활동</a></li>
+                     </ul>
+                  </li>
+                  <li class="site-header__nav-content__menu-list notfirst" data-idx="3">
+                     <i class="site-header__nav-content__menu-list__arrow"></i>
+                     <a href="#">주제분류</a>
+                     <ul>
+                        <li><a href="#">공통</a></li>
+                        <li><a href="#">평가</a></li>
+                        <li><a href="#">분류/기술</a></li>
+                        <li><a href="#">서비스</a></li>
+                        <li><a href="#">경영</a></li>
+                        <li><a href="#">전자기록</a></li>
+                        <li><a href="#">보존</a></li>
+                        <li><a href="#">국내법</a></li>
+                        <li><a href="#">해외법</a></li>
+                     </ul>
+                  </li>
+                  <li class="site-header__nav-content__menu-list notfirst" data-idx="4">
+                     <i class="site-header__nav-content__menu-list__arrow"></i>
+                     <a href="#">시대분류</a>
+                     <ul>
+                        <li><a href="#">갑오개혁 이전</a></li>
+                        <li><a href="#">갑오개혁~대한제국</a></li>
+                        <li><a href="#">일제강점기</a></li>
+                        <li><a href="#">해방 이후</a></li>
+                     </ul>
+                  </li>
+                     
+                  
+               </ul>
+               <ul class="site-header__nav-content__btn">
+                     <li class="btn"><a href="/p08.html">사전</a></li>
+                     <li class="btn"><a href="#">타임라인</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+<!-- 네비게이션 메뉴 end -->
+      <div class="site-header__backgoround">
+         <div class="site-header__backgoround__blue"></div>
+         <div class="site-header__backgoround__black"></div>
+      </div>
+   </header> 
+<!-- 헤더 end --> 
+ 
+
+<!-- p12-1 게시판 start -->
+<div class="main">
+    <div class="wrapper">
+        <section class="board-page">
+
+<!-- 왼쪽사이드 게시판 메뉴 start -->
+            <aside class="board-nav">
+                <h2 class="board-nav__title">게시판</h2>
+
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="type-of-board active"><i class="icon-all"></i>전체</a></li>
+                        <li><a href="#" class="type-of-board">공지사항</a></li>
+                        <li><a href="#" class="type-of-board">게시판 1</a></li>
+                        <li><a href="#" class="type-of-board">게시판 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+<!-- 왼쪽사이드 게시판 메뉴 end -->
+
+<!-- 오른쪽 영역 start -->
+            <div class="board-page__post">
+
+<!-- 오른쪽 영역 상단 여백 start -->
+                <div class="top-box">
+                </div>
+<!-- 오른쪽 영역 상단 여백 enc -->
+
+<!-- 오른쪽 영역 게시판 상세 제목 start -->
+                <div class="board-page__post__title">
+                    <h1>기록학 아카이브를 오픈합니다</h1>
+                </div>
+<!-- 오른쪽 영역 게시판 상세 제목 end -->
+
+<!-- 오른쪽 영역 게시판 상세 정보 start -->
+                <div class="board-page__post__info">
+                    <span class="info info-name">김이슬</span>
+                    <span class="info info-date">2019. 7. 6 12:55:18</span>
+                    <span class="info info-view">3</span>
+                    <span class="info info-download">3</span>
+                </div>
+<!-- 오른쪽 영역 게시판 상세 정보 end -->
+
+<!-- 오른쪽 영역 게시판 상세 본문 start -->
+                <div class="board-page__post__text">
+                    <p>
+                        내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 그렇게 마음에 와 닿았습니다. 영화의 첫 장면과 마지막 장면이 인상적이었습니다. 전사한 오빠의 친구이자 레지스탕스 대원이고, 지금은 살인죄로 7년째 복역하고 있는 연인 부베를 접견하러 가는 마라의 프로필이 열차 차창에 실루엣으로 뜨면서 독백과 함께 주제곡이 흐릅니다. 영화의 마지막 장면 역시 처음의 열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 선율로 끝납니다.
+                    </p>
+                </div>
+<!-- 오른쪽 영역 게시판 상세 본문 end -->
+
+<!-- 오른쪽 영역 게시판 상세 첨부파일 start -->
+                <div class="board-page__post__attachment">
+                    <ul>
+
+                        <li>
+                            <span class="attachment-title"><i class="xi-attachment"></i> 첨부파일</span>
+                            <a href="#" class="">기록학 아카이브1.jpg</a>
+                        </li>
+                        <li>
+                            <span class="attachment-title"><i class="xi-attachment"></i> 첨부파일</span>
+                            <a href="#" class="">기록학 아카이브2.jpg</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+<!-- 오른쪽 영역 게시판 상세 첨부파일 end -->
+
+<!-- 오른쪽 영역 게시판 상세 덧글 start -->
+                <div class="board-page__post__comment comment">
+
+<!-- 오른쪽 영역 게시판 상세 덧글 - 갯수 start -->
+                    <div class="comment__title">
+                        <i class="xi-comment"></i> 댓글 <span class="comment-count">1</span>
+                    </div>
+<!-- 오른쪽 영역 게시판 상세 덧글 - 갯수 end -->
+
+                    <ul>
+                        <li>
+                            <div class="comment__name-date">
+                                <span class="comment-name">김이슬</span> <span class="comment__date">2019. 9. 9 14:51:15</span>
+                            </div>
+                            <div class="comment__text">
+                                <p>댓글 내용입니다. 댓글 댓글 댓글입니다.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="comment__name-date">
+                                <span class="comment-name">김이슬</span> <span class="comment__date">2019. 9. 9 14:51:15</span>
+                            </div>
+                            <div class="comment__text">
+                                <p>댓글 내용입니다. 댓글 댓글 댓글입니다.</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="comment__name-date">
+                                <span class="comment-name">김이슬</span> <span class="comment__date">2019. 9. 9 14:51:15</span>
+                            </div>
+                            <div class="comment__text">
+                                <p>댓글 내용입니다. 댓글 댓글 댓글입니다. 댓글 내용입니다. 댓글 댓글 댓글입니다.댓글 내용입니다. 댓글 댓글 댓글입니다.댓글 내용입니다. 댓글 댓글 댓글입니다.댓글 내용입니다. 댓글 댓글 댓글입니다.댓글 내용입니다. 댓글 댓글 댓글입니다.댓글 내용입니다. 댓글 댓글 댓글입니다.</p>
+<!-- 오른쪽 영역 게시판 상세 덧글 - 수정 및 삭제 버튼 start -->
+                                <div class="comment__btn">
+                                    <button type="button" class="comment-edit">수정</button>
+                                    <button type="button" class="comment-del">삭제</button>
+                                </div>
+<!-- 오른쪽 영역 게시판 상세 덧글 - 수정 및 삭제 버튼 end -->
+                            </div>
+                        </li>
+
+<!-- 오른쪽 영역 게시판 상세 덧글 - 입력 start -->
+                        <div class="comment__add">
+                            <form>
+                                <textarea></textarea>
+                                <button type="button">등록</button>
+                            </form>
+                        </div>
+<!-- 오른쪽 영역 게시판 상세 덧글 - 입력 end -->
+
+                    </ul>
+                </div>
+<!-- 오른쪽 영역 게시판 상세 덧글 end -->
+
+
+<!-- 오른쪽 영역 게시판 상세 등록메뉴 버튼 start -->
+                <div class="board-page__post__buttons">
+                    <a class="btn btn-light edit" href="#"><i class="xi-pen"></i>글쓰기</a>
+                    <a class="btn btn-light del" href="#"><i class="xi-trash"></i>삭제</a>
+                    <a class="btn btn-dark reply" href="#"><i class="xi-subdirectory-arrow"></i>답글</a>
+                    <a class="btn btn-dark to-list" href="#" title="목록으로가기"><i class="xi-bars"></i></a>
+                </div>
+<!-- 오른쪽 영역 게시판 상세 등록 메뉴 버튼 end --> 
+
+            </div>
+<!-- 오른쪽 영역 end -->
+
+        </section>
+    </div>
+</div>
+<!-- p12 -1 게시판 end -->
+
+<!-- 푸터 시작 -->
+<footer class="site-footer">
+   <div class="site-footer__links">
+      <div class="wrapper">
+
+<!-- 아카이브소개 시작 -->
+         <div class="site-footer__links__introduction">
+
+               <h4 class="">
+                  <a href="/p11.html">아카이브 소개</a></h4>
+               <p>국내 기록학계의 역사를 확인할 수 있는 유의미한 기록들을 제공하여, 기록학 분야에 대한 이해를 돕고 기록관리의 중요성을 널리 알리고자 합니다.</p>
+ 
+         </div>
+<!-- 아카이브소개 끝 -->
+
+<!-- 최근소개 시작 -->
+         <div class="site-footer__links__recent">
+            <h4 class="">최근 소식</h4>
+            <p><a href="/p13.html">기록학 아카이브를 오픈합니다. 
+            <span class="date">2019. 8. 27</span></a></p>
+         </div>
+<!-- 최근소개 끝 -->
+
+<!-- 유관기관 시작 -->
+         <div class="site-footer__links__related">
+            <h4 class="">유관기관</h4>
+            <ul>
+               <li><a href="#"> 아카이브센터 </a></li>
+               <li><a href="#"> 국가기록원 </a></li>
+               <li><a href="#"> 서울기록원 </a></li>
+               <li><a href="#"> 한국기록학회 </a></li>
+               <li><a href="#"> 한국기록관리학회 </a></li>
+               <li><a href="#"> 한국기록전문가협회 </a></li>
+            </ul>
+         </div>
+<!-- 유관기관 끝 -->
+      </div>
+   </div>
+   <div class="site-footer__footer-address">
+      <address>© Copyright(C) 2017-2019 아카이브센터 all rights reserved.</address>
+   </div>
+</footer>
+<!-- 푸터 끝-->
+
+<script src="temp/scripts/script.js"></script>
+<script src="temp/scripts/scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+.board-nav {
+   &__title {
+      height: 35px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 35px;
+      color: #000000;
+      border-bottom: 2px solid #000;
+   }
+
+   li {
+      font-size: 16px;
+      font-weight: bold;
+      color: #a7a7a7;
+      line-height: 2.5em;
+      border-bottom: 1px solid #a7a7a7;
+      position: relative;
+   }
+
+
+   .type-of-board.active {
+      color: $boxBlue;
+
+      &::before{
+         content: "";
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         border-radius: 4px;
+         background: $boxBlue;
+         transform: translateY(-2px);
+         margin-right: 15px;
+      }
+   }
+
+}
+

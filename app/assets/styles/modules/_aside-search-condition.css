@@ -1,6 +1,4 @@
-
 .search-condition {
-
 
    &__title {
       height: 35px;
@@ -134,4 +132,3 @@
          transform: rotate(45deg);
       }
 }
-

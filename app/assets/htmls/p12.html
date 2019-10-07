@@ -1,0 +1,232 @@
+@@include('modules/header.html')
+
+<!-- p12 게시판 start -->
+<div class="main">
+    <div class="wrapper">
+        <section class="board">
+
+<!-- 왼쪽사이드 게시판 메뉴 start -->
+            <aside class="board-nav">
+                <h2 class="board-nav__title">게시판</h2>
+
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="type-of-board active"><i class="icon-all"></i>전체</a></li>
+                        <li><a href="#" class="type-of-board">공지사항</a></li>
+                        <li><a href="#" class="type-of-board">게시판 1</a></li>
+                        <li><a href="#" class="type-of-board">게시판 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+<!-- 왼쪽사이드 게시판 메뉴 end -->
+
+<!-- 오른쪽 영역 start -->
+            <div class="board__table">
+
+<!-- 오른쪽 영역 상단 start -->
+                <div class="top-box">
+
+<!-- 오른쪽 영역 상단 검색 걸과 start -->
+                    <div class="search-result">
+                        <h3>전체 <span class="search-result__count">35</span>건이 검색되었습니다.</h3>
+                    </div>
+<!-- 오른쪽 영역 상단 검색결과 end -->
+
+<!-- 오른쪽 영역 상단 검색 start -->
+                    <div class="board__search">
+                        <select id="search-sort">
+                            <option value="" rel="">제목 + 내용</option>
+                            <option value="">제목만</option>
+                            <option value="">글 작성자</option>
+                        </select>
+                        <div class="board__search-input">
+                            <form action="">
+                                <input type="search" placeholder="검색어를 입력하세요" title="검색어를 입력하세요" value="" name="">
+                            </form>
+                        </div>
+                    </div>
+<!-- 오른쪽 영역 상단 검색 start -->
+                    
+                </div>
+<!-- 오른쪽 영역 상단 end -->
+
+<!-- 오른쪽 영역 게시판 테이블 start -->
+                <table class="">
+                    <colgroup>
+                        <col width="40">
+                        <col width="395">
+                        <col width="100">
+                        <col width="60">
+                        <col width="100">
+                    </colgroup>
+
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>작성자</th>
+                            <th>조회수</th>
+                            <th>등록일</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>85</td>
+<!-- 오른쪽 영역 게시판 테이블 제목 start --> 
+<!-- 첨부파일 유무, 덧글의 유무, 비밀글인지 공개글인지에 따라 td > a 의 max-widht 값이 달라집니다.
+기본적으로 td 의 class 값이 board-title 만 있으나  
+코멘트, 비밀글, 첨부파일 모두가 표기 될 경우에는 class 명 board-title-3 이 추가
+코멘트, 비밀글, 첨부파일 중 두개가 표기 될 경우에는 class 명 board-title-2 이 추가
+코멘트, 비밀글, 첨부파일 중 하나가 표기 될 경우에는 class 명 board-title-1 이 추가
+
+됩니다.
+또한 기본 글이 아닌 덧글의 경우이는 class 명 re 도 추가 됩니다.
+-->                
+                            <td class="board-title board-title-3">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                <span class="comments">23</span>
+                                <i class="secret"></i>
+                                <i class="attachment"></i>
+                            </td>
+<!-- 오른쪽 영역 게시판 테이블 제목 end -->    
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+
+                        <tr>
+                            <td>84</td>
+                            <td class="board-title board-title-2">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                <span class="comments">3</span>
+                                <i class="attachment"></i>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+
+                        <tr>
+                            <td>83</td>
+                            <td class="board-title board-title-3 ">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                <span class="comments">3</span>
+                                <i class="secret"></i>
+                                <i class="attachment"></i>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+                        <tr>
+                            <td>82</td>
+                            <td class="board-title board-title-2">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다 </a>
+                                <i class="secret"></i>
+                                <i class="attachment"></i>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+                        <tr>
+                            <td>81</td>
+                            <td class="board-title board-title-1">
+                                    <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                    <span class="comments">3</span>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td class="board-title board-title-2">
+                                <a href="#">공지사항이 있습니다. </a>
+                                <span class="comments">3</span>
+                                <i class="secret"></i>
+                            </td>
+                            <td>아카이브지기</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+                        <tr>
+                            <td>79</td>
+                            <td class="board-title board-title-1">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                <span class="comments">3</span>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+
+                        <tr>
+                            <td>78</td>
+                            <td class="board-title re board-title-2">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                <span class="comments">3</span>
+                                <i class="attachment"></i>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+
+                        <tr>
+                            <td>77</td>
+                            <td class="board-title board-title-3 ">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다</a>
+                                <span class="comments">33</span>
+                                <i class="secret"></i>
+                                <i class="attachment"></i>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+                        <tr>
+                            <td>76</td>
+                            <td class="board-title re">
+                                <a href="#">열차 차창으로 다시 돌아오면서 주제곡의 잔잔한 음악이 들려온다 </a>
+                            </td>
+                            <td>홍길동</td>
+                            <td>2</td>
+                            <td>2019. 8. 27</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+<!-- 오른쪽 영역 게시판 테이블 start -->
+
+<!-- 오른쪽 영역 게시판 페이지네이션 + 글쓰기 버튼 start -->
+                <div class="nav-writeBtn">
+                    <nav class="pagination" role="navigation">
+                        <div class="pageBtn">
+                            <a hrfe="#" class="page-btn first-page"></a>
+                            <a hrfe="#" class="page-btn prev-page"></a>
+                            <a hrfe="#" class="page-number current-page">1</a>
+                            <a hrfe="#" class="page-number">2</a>
+                            <a hrfe="#" class="page-number">3</a>
+                            <a hrfe="#" class="page-number">4</a>
+                            <a hrfe="#" class="page-number">5</a>
+                            <a hrfe="#" class="page-btn next-page"></a>
+                            <a hrfe="#" class="page-btn last-page"></a>
+                        </div>
+                    </nav>
+<!-- 오른쪽 영역 게시판 글쓰기 버튼 start -->
+                    <a class="btn btn-dark write" href="#"><i class="xi-plus-min"></i>글쓰기</a>
+<!-- 오른쪽 영역 게시판 글쓰기 버튼 start -->
+                </div>
+<!-- 오른쪽 영역 게시판 페이지네이션 + 글쓰기 버튼 end -->
+
+            </div>
+ <!-- 오른쪽 영역 end -->
+
+        </section>
+    </div>
+</div>
+<!-- p12 게시판 end -->
+
+@@include('modules/footer.html')

@@ -1,0 +1,137 @@
+@@include('modules/header.html')
+<!-- p12-2 게시판 start -->
+<div class="main">
+    <div class="wrapper">
+        <section class="board-write">
+
+<!-- 왼쪽사이드 게시판 메뉴 start -->
+            <aside class="board-nav">
+                <h2 class="board-nav__title">게시판</h2>
+
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="type-of-board active"><i class="icon-all"></i>전체</a></li>
+                        <li><a href="#" class="type-of-board">공지사항</a></li>
+                        <li><a href="#" class="type-of-board">게시판 1</a></li>
+                        <li><a href="#" class="type-of-board">게시판 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+<!-- 왼쪽사이드 게시판 메뉴 end -->
+
+<!-- 오른쪽 콘텐츠 영역 start -->
+            <div class="board-write__area">
+
+<!-- 오른쪽 콘텐츠 영역 상단 여백 start -->
+                <div class="top-box">
+                </div>
+<!-- 오른쪽 콘텐츠 영역 상단 여백 end -->
+
+<!-- 글쓰기 박스 start -->
+                <form class="board-box">
+
+<!-- 글쓰기 박스 - 작성자 + 비밀번호 start -->
+                    <ul class="">
+                        <li class="board-box__tr-half">
+                            <div class="board-box__th li-title-dot">작성자</div>
+                     <div class="board-box__td less-padding">
+                                <input type="text" id="" name="" value="">
+                            </div>
+                        </li>
+
+                        <li class="board-box__tr-half">
+                            <div class="board-box__th li-title-dot">비밀번호</div>
+                     <div class=" board-box__td less-padding">
+                                <input type="password" id="" name="" value="">
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 작성자 + 비밀번호 end -->
+
+<!-- 글쓰기 박스 - 비밀구분 start -->
+                    <ul class="">
+                        <li>
+                            <div class="board-box__th li-title-dot">비밀구분</div>
+                     <div class=" board-box__td">
+                                <label class="checkbox-container">공개
+                                    <input type="radio" checked="checked" name="radio" value="">
+                                    <span class="checkmark checkmark-radio"></span>
+                                </label>
+                                <label class="checkbox-container">비밀
+                                    <input type="radio" name="radio" value="">
+                                    <span class="checkmark checkmark-radio"></span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 비밀구분 end -->
+
+<!-- 글쓰기 박스 - 제목 start -->
+                    <ul class="">
+                        <li>
+                            <div class="board-box__th li-title-dot">제목</div>
+                     <div class=" board-box__td board-box__td-title less-padding">
+                                <input type="text" id="" name="" value="">
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 제목 end -->
+
+<!-- 글쓰기 박스 - 텍스트 start -->
+                    <ul class="board-box__text">
+                        <li>
+                            <div class="board-box__th li-title-dot">내용</div>
+                            <div class="board-box__td">
+                                <textarea name="board_content" id="ir1" class="board_content" style="display: none;"></textarea>
+
+<!-- 글쓰기 박스 - 텍스트 - 스마트에디터 start -->
+                                <script type="text/javascript">
+                                    var oEditors = [];
+                                    nhn.husky.EZCreator.createInIFrame({
+                                        oAppRef: oEditors,
+                                        elPlaceHolder: "ir1",
+                                        sSkinURI: "temp/scripts/lib/se2/SmartEditor2Skin.html",
+                                        fCreator: "createSEditor2"
+                                    });
+                                </script>
+<!-- 글쓰기 박스 - 텍스트 - 스마트에디터 end -->
+
+                            </div>
+                        </li>
+                    </ul>
+<!-- 글쓰기 박스 - 텍스트 end -->
+
+<!-- 글쓰기 박스 - 첨부파일 start -->
+                    <ul class="board-box__attachments">
+                        <li>
+                            <div class="board-box__th"></div>
+                            <div class="board-box__th board-box__attachments__th"> <i class="xi-attachment"> </i> 첨부파일</div>
+                            <div class="board-box__td board-box__attachments__td">
+                                <input type="file">
+                                <button class="btn btn-plus" title="추가"><i class="xi-plus-min"></i></button>
+                                <button class="btn btn-del" title="삭제"><i class="xi-trash"></i></button>
+                            </div>
+                        </li>
+
+                    </ul>
+<!-- 글쓰기 박스 - 첨부파일 end -->
+
+                </form>
+<!-- 글쓰기 박스 end -->
+
+ <!-- 글쓰기 하단 메뉴 start -->
+                <div class="board-write__area__buttons">
+                    <a class="btn btn-dark cancel" href="#"><i class="xi-close-min"></i>취소</a>
+                    <a class="btn btn-dark save" href="#"><i class="xi-check-min"></i>저장</a>
+                    <a class="btn btn-dark to-list" href="/p12.html" title="목록으로가기"><i class="xi-bars"></i></a>
+                </div>
+ <!-- 글쓰기 하단 메뉴 end -->   
+
+            </div>
+<!-- 오른쪽 콘텐츠 영역 end -->
+
+        </section>
+    </div>
+</div>
+<!-- p12-2 게시판 end -->
+@@include('modules/footer.html')
