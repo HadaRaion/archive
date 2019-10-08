@@ -13,7 +13,7 @@ gulp.task('watch', function() {
 
    watch('./app/assets/htmls/**/*.html', gulp.parallel('waitForHtmls'));
    watch('./app/assets/styles/**/*.css', gulp.parallel('waitForStyles'));
-   watch('./app/assets/scripts/**/*.js', gulp.parallel('waitForScripts'));
+   watch('./app/temp/scripts/script.js').on("change", browserSync.reload);
 })
 
 
@@ -25,9 +25,4 @@ gulp.task('waitForHtmls', gulp.series('htmls', function(cb) {
 gulp.task('waitForStyles', gulp.series('styles', function() {
    return gulp.src('./app/temp/styles/styles.css')
      .pipe(browserSync.stream());
-}))
-
-gulp.task('waitForScripts', gulp.series('scripts', function(cb) {
-   browserSync.reload();
-   cb()
 }))
