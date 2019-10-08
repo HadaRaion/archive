@@ -2540,6 +2540,10 @@ td {
          content: ',';
          margin-right: 10px;
       }
+.dic .half-size td:last-child::after{
+         content: '';
+         margin-right: 10px;
+      }
 .dic .half-size td.exist a {
          height: 27px;
          padding: 2px 13px;

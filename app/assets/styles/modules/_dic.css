@@ -219,6 +219,11 @@
          margin-right: 10px;
       }
 
+      td:last-child::after{
+         content: '';
+         margin-right: 10px;
+      }
+
       td.exist a {
          height: 27px;
          padding: 2px 13px;
