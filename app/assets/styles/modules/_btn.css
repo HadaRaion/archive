@@ -33,6 +33,14 @@
          content: "\e913";
       }  
    }
+
+   &-gray.active {
+      background : $boxBlue;
+
+      &:after {
+         content: "\e91a";
+      } 
+   }
 }
 
 .btn-tag {

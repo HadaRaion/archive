@@ -562,6 +562,12 @@ aside {
 .btn-small-gray:after {
          content: "\e913";
       }
+.btn-small-gray.active {
+      background : #43adff; 
+   }
+.btn-small-gray.active:after {
+         content: "\e91a";
+      }
 .btn-tag {
    width: 93px;
    height: 27px;
@@ -1624,6 +1630,8 @@ td {
 /* BEM Blocks -- related p4  */
 .doc {
    padding-top: 60px;
+
+   
 }
 .doc > div{
       padding : 0 100px;
@@ -1659,65 +1667,99 @@ td {
    }
 .doc__detail-title {
    margin: 50px auto 10px;
+
 }
 .doc__detail {
-   display: grid;
-   grid-template-columns: 100px 300px 100px 300px;
+   display: table;
    width: 800px;
    margin: 0 auto;
-   border-top: 2px solid #000;
-   border-bottom: 2px solid #000;
-}
-.doc__detail .doc-detail-slider {
-      grid-column: 1 / span 4;
-      -ms-grid-columns: 1 / span 4;
+   border-top: solid 2px #000;
+   border-bottom: solid 2px #000;
+ }
+.doc__detail .tr {
+     display: table;
+     width: 100%;
+     border-bottom: solid 1px #ececec;
+
    }
-.doc__detail__title {
-       border-top: solid 1px #ececec;;
-       padding: 10px 0;
-       line-height: 25px;
+.doc__detail .tr-half {
+       display: table-row;
+       width:50% !important;
+       float: left;
    }
-.doc__detail__content {
-      border-top: solid 1px #ececec;
-      padding: 10px 0;
-      font-size: 15px;
-      color: #000;
-      font-weight: bold;
-      line-height: 25px;
+.doc__detail .th, .doc__detail .td {
+     display: table-cell; 
+     padding: 13px 0 14px;
    }
-.doc__detail__content ul { 
-         float: left;
-      }
-.doc__detail__content li {
-         list-style: none;
-         float: left;
-      }
-.doc__detail__content > ul li::before {
+.doc__detail .th {
+     width: 85px;
+     vertical-align: top;
+     padding-top: 20px;
+   }
+.doc__detail .td {
+     font-size: 15px;
+     color: #000;
+     font-weight: bold;
+     line-height: 25px;
+   }
+.doc__detail .td > ul > li {
+       float: left;
+     }
+.doc__detail .td > ul > li::before {
          content: '\e93f';
          font-family: 'xeicon';
          padding: 0 4px;
          position: relative;
          top: 1px;
-      }
-.doc__detail__content > ul li:first-child::before {
+       }
+.doc__detail .td > ul > li:first-child::before {
+       content: '';
+       padding: 0;
+       }
+.doc__detail .td > ul > li.btn-for-others::before {
          content: '';
          padding: 0;
-      }
-.doc__detail__content > .url {
-         text-decoration: underline;
-      }
-.doc__detail__content .btn-small {
          margin-left: 13px;
-      }
-.doc__detail__content .btn-tag {
-         margin-right: 5px;
-      }
+       }
+.doc__detail .td > ul > li.btn-for-others > button {
+         transform: translateY(-1px);
+       }
+.doc__detail .td .btn-tag {
+       margin-right: 5px; 
+     }
+.doc__detail .td .url {
+       text-decoration: underline;
+     }
+.tr-slider.typeSlider {
+   display: none;
+ }
+.tr-slider.typeSlider.active {
+   display: table-row;
+ }
+.tr-slider.sourceSlider {
+   display: none;
+ }
+.tr-slider.sourceSlider.active {
+   display: table-row;
+ }
+.tr-slider.topicSlider {
+   display: none;
+ }
+.tr-slider.topicSlider.active {
+   display: table-row;
+ }
+.tr-slider.periodSlider {
+   display: none;
+ }
+.tr-slider.periodSlider.active {
+   display: table-row;
+ }
 .doc-detail-slider {
    width: 800px;
    margin: 0 auto 18px;
    padding: 30px 66px 15px;
    background: #ececec;
-   display:none;   
+   display:block;   
 }
 .doc-detail-slider__slide {
       position: relative;
@@ -3294,39 +3336,6 @@ td {
          color: #fff;
          font-size: 12px;
       }
-.test i {
-     display: block;
-     margin-right: 20px;
-     font-size : 20px;
-   }
-div.table {
-  display: table;
-  width: 400px;
-  background-color: lightblue;
-  border-collapse: collapse;
-  float: left;
+.test {
 
-}
-div.row {
-/* 
-display: table-row;
-*/
-}
-div.cell {
-  display: table-cell;
-
-}
-div.colspan,
-div.colspan+div.cell {
-  border: 0;
-}
-div.colspan>div {
-  width: 0px;
-}
-div.colspan>div>div {
-  position: relative;
-  width: 394px;
-  overflow: hidden;
-  border: 2px solid yellow;
-  color:lemonchiffon
 }

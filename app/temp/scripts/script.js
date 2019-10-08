@@ -21,6 +21,11 @@ for (var i = 0; i < mainNavList.length; i++) {
     
 }
 
+// 탑메뉴 게시판
+$('#boardDropdown').click(function() {
+    $('ul:first',this).slideToggle(100);
+})
+
 
 
 // p04 슬라이더 
@@ -50,20 +55,56 @@ $('.slider-nav').slick({
 
 
 // p04 다른기록 토글
-$('#toggleBtnOfSource').click(function() {
-         
-    $('.source-slider').slideToggle('5000', function(){
-    
-       if ($('.source-slider').is(':visible')) {
-          $('#toggleBtnOfSource').addClass("btn-small-blue")
-          $('#toggleBtnOfSource').removeClass("btn-small-gray")
-       } else {
-          $('#toggleBtnOfSource').addClass("btn-small-gray")
-          $('#toggleBtnOfSource').removeClass("btn-small-blue")
-       }
+ $('#toggleType').click(function() {
+    $('.sourceSlider').removeClass("active");
+    $('#toggleSource').removeClass("active");
+    $('.topicSlider').removeClass("active");
+    $('#toggleTopic').removeClass("active");
+    $('.periodSlider').removeClass("active");
+    $('#togglePeriod').removeClass("active")
 
-    });
+    $('.typeSlider').toggleClass("active");
+    $(this).toggleClass("active");
+    $('.type-slider').get(0).slick.setPosition(); 
+ })
+
+ $('#toggleSource').click(function() {
+    $('.typeSlider').removeClass("active");
+    $('#toggleType').removeClass("active");
+    $('.topicSlider').removeClass("active");
+    $('#toggleTopic').removeClass("active");
+    $('.periodSlider').removeClass("active");
+    $('#togglePeriod').removeClass("active")
+
+    $('.sourceSlider').toggleClass("active");
+    $(this).toggleClass("active");
     $('.source-slider').get(0).slick.setPosition(); 
+ })
+
+ $('#toggleTopic').click(function() {
+    $('.typeSlider').removeClass("active");
+    $('#toggleType').removeClass("active");
+    $('.sourceSlider').removeClass("active");
+    $('#toggleSource').removeClass("active");
+    $('.periodSlider').removeClass("active");
+    $('#togglePeriod').removeClass("active");
+
+    $('.topicSlider').toggleClass("active");
+    $(this).toggleClass("active");
+    $('.topic-slider').get(0).slick.setPosition(); 
+ })
+
+ $('#togglePeriod').click(function() {
+    $('.typeSlider').removeClass("active");
+    $('#toggleType').removeClass("active");
+    $('.sourceSlider').removeClass("active");
+    $('#toggleSource').removeClass("active");
+    $('.topicSlider').removeClass("active");
+    $('#toggleTopic').removeClass("active");
+
+    $('.periodSlider').toggleClass("active");
+    $(this).toggleClass("active");
+    $('.period-slider').get(0).slick.setPosition(); 
  })
 
 
@@ -229,4 +270,3 @@ $(".board-box__attachments").on("click", ".btn-minus", function(){
 $(".btn.cancel").click(function() {
     window.history.back();
 });
-

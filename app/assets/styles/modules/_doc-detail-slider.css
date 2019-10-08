@@ -3,7 +3,7 @@
    margin: 0 auto 18px;
    padding: 30px 66px 15px;
    background: #ececec;
-   display:none;
+   display:block;
 
    &__slide {
       position: relative;

@@ -27,7 +27,7 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
    <script type="text/javascript" src="temp/scripts/lib/se2/js/service/HuskyEZCreator.js" charset="utf-8"></script>
    
 </head>
@@ -173,89 +173,242 @@
          <div class="doc__detail-title related-information__title">상세정보</div>
 <!-- p04기록상세조회 상세정보 제목 end -->
 
-<!-- p04기록상세조회 상세정보 표 start -->
+<!-- p04기록상세조회 상세정보 start -->
          <div class="doc__detail">
+
+<!-- p04기록상세조회 상세정보 형태분류 + 출처분류 start -->
+               <ul class="tr">
+
 <!-- p04기록상세조회 상세정보 형태분류 start -->
-            <div class="doc__detail__title li-title-dot">형태분류</div>
-            <div class="doc__detail__content">사진류
-               <button type="button" class="btn-small btn-small-gray" id="">다른 기록</button>
-            </div>
-<!-- p04기록상세조회 상세정보 형태분류 end -->
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>형태분류</span>
+                     </div>
+                     <div class="td">
+                           <ul>
+                              <li>사진류</li>
+                              <li class="btn-for-others"><button type="button" class="btn-small btn-small-gray" id="toggleType">다른 기록</button></li>
+                           </ul>
+                     </div>
+                  </li>
+<!-- p04기록상세조회 상세정보 형태분류 end -->        
 
 <!-- p04기록상세조회 상세정보 출처분류 start -->
-            <div class="doc__detail__title li-title-dot">출처분류</div>
-            <div class="doc__detail__content">
-               <ul>
-                  <li>민간기업</li> <li>한국문헌정보(주)</li>
-                  <button type="button" class="btn-small btn-small-gray" id="toggleBtnOfSource">다른 기록</button>
-               </ul>
-            </div>
-<!-- p04기록상세조회 상세정보 출처분류 end -->
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>출처분류</span>
+                     </div>
+                     <div class="td">
+                           <ul>
+                              <li>민간기업</li>
+                              <li>한국문헌정보(주)</li>
+                              <li class="btn-for-others"><button type="button" class="btn-small btn-small-gray" id="toggleSource">다른 기록</button></li>
+                           </ul>
+                     </div>
+                  </li>
+<!-- p04기록상세조회 상세정보 출처분류 enc -->
 
-<!-- p04기록상세조회 상세정보 출처분류 다른기록 슬라이더 start -->
-            <div class="doc-detail-slider source-slider">
-               <div class="doc-detail-slider__slide">
-                  <div class="doc-detail-slider__slide__thumbnail"
-                     style="background-image: url(https://loremflickr.com/325/230);"> </div>
-                  <div class="doc-detail-slider__slide__title">우리들의 생각은 그와 함께 한다.</div>
-               </div>
-               <div class="doc-detail-slider__slide">
-                  <div class="doc-detail-slider__slide__thumbnail"
-                     style="background-image: url(https://loremflickr.com/325/230);"> </div>
-                  <div class="doc-detail-slider__slide__title">우리들의 생각은 그와 함께 한다.</div>
-               </div>
-               <div class="doc-detail-slider__slide">
-                  <div class="doc-detail-slider__slide__thumbnail no-img"> </div>
-                  <div class="doc-detail-slider__slide__title">우리들의 생각은 그와 함께 한다.</div>
-               </div>
-               <div class="doc-detail-slider__slide">
-                  <div class="doc-detail-slider__slide__thumbnail"
-                     style="background-image: url(https://loremflickr.com/325/230);"> </div>
-                  <div class="doc-detail-slider__slide__title">우리들의 생각은 그와 함께 한다.</div>
-               </div>
-               <div class="doc-detail-slider__slide">
-                  <div class="doc-detail-slider__slide__thumbnail"
-                     style="background-image: url(https://loremflickr.com/325/230);"> </div>
-                  <div class="doc-detail-slider__slide__title">우리들의 생각은 그와 함께 한다.</div>
-               </div>
-            </div>
-<!-- p04기록상세조회 상세정보 출처분류 다른기록 슬라이더 end -->
+<!-- p04기록상세조회 상세정보 형태분류 다른기록 슬라이더  start -->
+                  <li class="tr-slider typeSlider">
+         
+                     <div class="doc-detail-slider type-slider">
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">형태분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">형태분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail no-img"> </div>
+                              <div class="doc-detail-slider__slide__title">형태분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">형태분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">형태분류 다른기록 슬라이더</div>
+                           </div>
+                     </div>
+                  </li>
+ <!-- p04기록상세조회 상세정보 형태분류 다른기록 슬라이더  end -->
+
+ <!-- p04기록상세조회 상세정보 출처분류 다른기록 슬라이더  start -->        
+                  <li class="tr-slider sourceSlider">
+         
+                     <div class="doc-detail-slider source-slider">
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">출처분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">출처분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail no-img"> </div>
+                              <div class="doc-detail-slider__slide__title">출처분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">출처분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">출처분류 다른기록 슬라이더</div>
+                           </div>
+                     </div>
+         
+                  </li>
+<!-- p04기록상세조회 상세정보 출처분류 다른기록 슬라이더  end -->            
+               </ul>
+<!-- p04기록상세조회 상세정보 형태분류 + 출처분류 end -->         
+
+<!-- p04기록상세조회 상세정보 주제분류 + 시대분류 start -->
+               <ul class="tr">
 
 <!-- p04기록상세조회 상세정보 주제분류 start -->
-            <div class="doc__detail__title li-title-dot">주제분류</div>
-            <div class="doc__detail__content"></div>
-            <div class="doc__detail__title li-title-dot">태그</div>
-            <div class="doc__detail__content">
-               <ul>
-                  <li>해방이후</li>
-                  <li>기록관리 법령제정 후 </li>
-                  <li>2010년 대</li>
-                  <li>2019년</li>
-                  <button type="button" class="btn-small btn-small-gray" id="">다른 기록</button>
-               </ul>
-            </div>
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>주제분류</span>
+                     </div>
+                     <div class="td">
+                           <ul>
+                              <li>대주제</li>
+                              <li>소주제</li>
+                              <li class="btn-for-others"><button type="button" class="btn-small btn-small-gray" id="toggleTopic">다른 기록</button></li>
+                           </ul>
+                     </div>
+                  </li>
 <!-- p04기록상세조회 상세정보 주제분류 end -->
 
-<!-- p04기록상세조회 상세정보 출판사, 언론사 start -->
-            <div class="doc__detail__title li-title-dot">출판사</div>
-            <div class="doc__detail__content">더불어숲</div>
+<!-- p04기록상세조회 상세정보 시대분류 start -->
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>시대분류</span>
+                     </div>
+                     <div class="td">
+                           <ul>
+                              <li>해방이후</li>
+                              <li>기록관리 법령제정 후 </li>
+                              <li>2010년 대</li>
+                              <li>2019년</li>
+                              <li class="btn-for-others"><button type="button" class="btn-small btn-small-gray" id="togglePeriod">다른 기록</button></li>
+                           </ul>
+                     </div>
+                  </li>
+<!-- p04기록상세조회 상세정보 시대분류 end -->
 
-            <div class="doc__detail__title li-title-dot">언론사</div>
-            <div class="doc__detail__content">한겨레신문</div>
-<!-- p04기록상세조회 상세정보 출판사, 언론사 end -->  
+<!-- p04기록상세조회 상세정보 주제분류 다른기록 슬라이더 start -->
+                  <li class="tr-slider topicSlider">
+         
+                     <div class="doc-detail-slider topic-slider">
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">주제분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">주제분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail no-img"> </div>
+                              <div class="doc-detail-slider__slide__title">주제분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">주제분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">주제분류 다른기록 슬라이더</div>
+                           </div>
+                     </div>
+         
+                  </li>
+<!-- p04기록상세조회 상세정보 주제분류 다른기록 슬라이더 end -->
 
-<!-- p04기록상세조회 상세정보 URL, 태그 start -->         
-            <div class="doc__detail__title li-title-dot">URL</div>
-            <div class="doc__detail__content"><a class="url" href="">www.abcdef.co.kr</a></div>
+<!-- p04기록상세조회 상세정보 시대분류 다른기록 슬라이더 start -->  
+                  <li class="tr-slider periodSlider">
+         
+                     <div class="doc-detail-slider period-slider">
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">시대분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">시대분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail no-img"> </div>
+                              <div class="doc-detail-slider__slide__title">시대분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">시대분류 다른기록 슬라이더</div>
+                           </div>
+                           <div class="doc-detail-slider__slide">
+                              <div class="doc-detail-slider__slide__thumbnail" style="background-image: url(https://loremflickr.com/325/230);"> </div>
+                              <div class="doc-detail-slider__slide__title">시대분류 다른기록 슬라이더</div>
+                           </div>
+                     </div>
+         
+                  </li>
+<!-- p04기록상세조회 상세정보 시대분류 다른기록 슬라이더 end -->       
+               </ul>
+<!-- p04기록상세조회 상세정보 주제분류 + 시대분류 end -->
 
-            <div class="doc__detail__title li-title-dot">태그</div>
-            <div class="doc__detail__content">
-                  <a class="btn-medium btn-tag">한신대학교</a>
-                  <a class="btn-medium btn-tag">기록</a>
-            </div>
-<!-- p04기록상세조회 상세정보 URL, 태그 end -->                
+<!-- p04기록상세조회 상세정보 출판사 + 언론사 start -->
+               <ul class="tr">
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>출판사</span>
+                     </div>
+                     <div class="td">
+                           <span>더불어숲</span>
+                     </div>
+                  </li>
+         
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>언론사</span>
+                     </div>
+                     <div class="td">
+                           <span>한겨레신문</span>
+                     </div>
+                  </li>
+               </ul>
+<!-- p04기록상세조회 상세정보 출판사 + 언론사 end -->    
+
+<!-- p04기록상세조회 상세정보 url + 태그 start -->
+               <ul class="tr">
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>URL</span>
+                     </div>
+                     <div class="td">
+                           <a class="url" href="">www.abcdef.co.kr</a>
+                     </div>
+                  </li>
+         
+                  <li class="tr-half">
+                     <div class="th li-title-dot">
+                           <span>태그</span>
+                     </div>
+                     <div class="td">
+                           <a class="btn-medium btn-tag">한신대학교</a>
+                           <a class="btn-medium btn-tag">기록</a>
+                     </div>
+                  </li>
+               </ul>
+<!-- p04기록상세조회 상세정보 url + 태그 end -->      
+
          </div>
-<!-- p04기록상세조회 상세정보 표 end -->
+<!-- p04기록상세조회 상세정보 end -->
 
 <!-- p04기록상세조회 이미지 슬라이더 start -->
          <div class="doc-slider">
