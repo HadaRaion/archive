@@ -2314,12 +2314,35 @@ td {
       /*  transform: translateY(-3px); */
      
    }
+.term-board {
+   width: 100%;
+}
 .term-board th, .term-board td {
       height: 38px;
+   }
+.term-board td > a {
+      display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       word-wrap: normal;
+      max-width: 195px;
+   }
+.term-board td > span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+   }
+.term-board__another-title > span {
+      max-width: 190px;
+   }
+.term-board__period > span {
+      max-width: 185px;
+   }
+.term-board__date > span {
+      max-width: 85px;
    }
 .term-board i {
       display: inline-block;

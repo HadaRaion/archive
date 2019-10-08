@@ -16,13 +16,39 @@
 }
 
 .term-board {
+   width: 100%;
 
    th, td {
       height: 38px;
+   }
+
+   td > a {
+      display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
       word-wrap: normal;
+      max-width: 195px;
+   }
+
+   td > span {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+   }
+
+   &__another-title > span {
+      max-width: 190px;
+   }
+
+   &__period > span {
+      max-width: 185px;
+   }
+
+   &__date > span {
+      max-width: 85px;
    }
 
    i {
