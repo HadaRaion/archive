@@ -22,6 +22,7 @@
          line-height: 24.1px;
          border-radius: 12px;
       }
+
       &__menu {
          float: right;
          & > ul {
@@ -110,25 +111,30 @@
          float: left;
          margin-right: 47px; 
 
-         &__arrow.active {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 6px 6px 6px;
-            border-color: transparent transparent #000 transparent;
-            position: absolute;
-            bottom: 0px;
-            transform: translateX(20px)
+         &.active {
+            .arrow {
+               width: 0;
+               height: 0;
+               border-style: solid;
+               border-width: 0 6px 6px 6px;
+               border-color: transparent transparent #000 transparent;
+               position: absolute;
+               bottom: 0px;
+               transform: translateX(20px)
+            }
+            
+            & > ul {
+               display: block;
+            }
          }
 
-         
          & > a {
             line-height: 47px;
             font-size: 15px;
             font-weight: bold;
             color: #000000;
-
          }
+
          & > ul {
             display: none;
             height: 30px;
@@ -136,10 +142,6 @@
             position: absolute;
             left: 0;
             top:44px;
-
-            &.active{
-               display: block;
-            }
 
             & > li {
                float: left;

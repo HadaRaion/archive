@@ -1,5 +1,97 @@
 // 메인페이지 카운트 업 $(".num").counterUp();
 
+// 메인페이지 슬라이더 
+$('.hero-slider').slick({
+    autoplay: false,
+    arrows: true,
+    dots: true
+});
+
+
+
+// 메인네비게이션 메뉴 
+var mainNavList = $('.site-header__nav-content__menu-list');
+
+for (var i = 0; i < mainNavList.length; i++) {
+
+    mainNavList[i].onclick = function() {
+        mainNavList.removeClass("active");
+        this.classList.add("active");
+    };
+    
+}
+
+
+
+// p04 슬라이더 
+$('.doc-detail-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    dots: false,
+    focusOnSelect: true
+});
+
+$('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+});
+  
+$('.slider-nav').slick({
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    focusOnSelect: true
+});
+
+
+
+// p04 다른기록 토글
+$('#toggleBtnOfSource').click(function() {
+         
+    $('.source-slider').slideToggle('5000', function(){
+    
+       if ($('.source-slider').is(':visible')) {
+          $('#toggleBtnOfSource').addClass("btn-small-blue")
+          $('#toggleBtnOfSource').removeClass("btn-small-gray")
+       } else {
+          $('#toggleBtnOfSource').addClass("btn-small-gray")
+          $('#toggleBtnOfSource').removeClass("btn-small-blue")
+       }
+
+    });
+    $('.source-slider').get(0).slick.setPosition(); 
+ })
+
+
+
+// to-top 버튼
+var btnTop = $('#toTop');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 0) {
+    btnTop.addClass('show');
+  } else {
+    btnTop.removeClass('show');
+  }
+});
+
+btnTop.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+
+// 소셜공유
+$('.sns-share').click(function() {
+    $('ul:first',this).slideToggle(0);
+})
+
+ 
 
 // 페이지 넘버
 var pageNumber = $(".page-number");
@@ -137,3 +229,4 @@ $(".board-box__attachments").on("click", ".btn-minus", function(){
 $(".btn.cancel").click(function() {
     window.history.back();
 });
+

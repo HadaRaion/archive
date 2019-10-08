@@ -31,3 +31,44 @@ class Menu {
 }
 
 export default Menu;
+
+
+var mainNavList = $('.site-header__nav-content__menu-list');
+var mainNavListFist = $('.site-header__nav-content__menu-list.first');
+
+
+
+for (var i = 0; i < mainNavList.length; i++) {
+
+  mainNavList[i].onclick = function() {
+
+      mainNavList.find("ul").removeClass("active");
+      this.find("ul").classList.add("active");
+  };
+  
+}
+
+
+
+$('nav').on("click", mainNavList, function() {
+   $('.site-header__nav-content__menu-list').find("ul").removeClass("active");
+   $(this).find("ul").addClass("active");
+})
+
+$(".board-box__attachments").on("click", ".btn-minus", function(){
+   $(this).closest("li").remove()
+})
+
+
+
+var sideNavMenu = $(".nav-menu");
+
+for (var i = 0; i < sideNavMenu.length; i++) {
+
+  sideNavMenu[i].onclick = function() {
+
+      sideNavMenu.removeClass("active");
+      this.classList.add("active");
+  };
+  
+}

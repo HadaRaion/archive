@@ -618,6 +618,7 @@ aside {
       color: #707070;
       font-size: 18px;
       line-height: 26px;
+      margin-left: 2px;
    }
 .to-top.show {
       opacity: 1;
@@ -632,6 +633,13 @@ aside {
    background: url(../images/icons/icon-social-share.svg) no-repeat;
    background-size: 32px 26px;
 }
+.btn.sns-share i {
+      margin: 0 6px;
+      color: #fff;
+      font-size: 22px;
+      line-height: 35px;
+      transform: translateY(0px);
+   }
 .btn {
    display: inline-block;
    position: relative;
@@ -762,22 +770,24 @@ aside {
          float: left;
          margin-right: 47px;
       }
-.site-header__nav-content__menu-list__arrow.active {
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 0 6px 6px 6px;
-            border-color: transparent transparent #000 transparent;
-            position: absolute;
-            bottom: 0px;
-            transform: translateX(20px)
-         }
+.site-header__nav-content__menu-list.active .arrow {
+               width: 0;
+               height: 0;
+               border-style: solid;
+               border-width: 0 6px 6px 6px;
+               border-color: transparent transparent #000 transparent;
+               position: absolute;
+               bottom: 0px;
+               transform: translateX(20px)
+            }
+.site-header__nav-content__menu-list.active > ul {
+               display: block;
+            }
 .site-header__nav-content__menu-list > a {
             line-height: 47px;
             font-size: 15px;
             font-weight: bold;
             color: #000000;
-
          }
 .site-header__nav-content__menu-list > ul {
             display: none;
@@ -787,9 +797,6 @@ aside {
             left: 0;
             top:44px;
          }
-.site-header__nav-content__menu-list > ul.active{
-               display: block;
-            }
 .site-header__nav-content__menu-list > ul > li {
                float: left;
                font-size: 12px;
@@ -1986,9 +1993,6 @@ td {
       border-radius: 18px;
       float: left;
       margin: 0 6px;
-      color: #fff;
-      font-size: 22px;
-      line-height: 35px;
      }
 .ccl-social .sns-share__list li > a.fb{
          background: #3c5a98;
