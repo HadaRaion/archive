@@ -69,6 +69,7 @@
 @import "modules/_board-page";
 @import "modules/_board-write";
 @import "modules/_board-box";
+@import "modules/_board-pw";
 @import "modules/_comment";
 
 @import "modules/_test";

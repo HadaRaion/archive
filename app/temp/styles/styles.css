@@ -3109,8 +3109,7 @@ td {
       float: left;
    }
 .board-write__area .top-box {
-         height: 34px;
-         border-bottom: 2px solid #000;
+         height: 36px;
       }
 .board-write__area__buttons {
       margin-top: 0;
@@ -3261,6 +3260,63 @@ td {
                color: #fff;
                transform: translate(-3px, -2px);
             }
+.board-pw {
+
+   padding-top: 70px;
+}
+.board-pw__area {
+      width: calc(100% - 305px);
+      float: left;
+   }
+.board-pw__area .top-box {
+         height: 34px;
+         border: none;
+
+      }
+.board-pw__area form {
+         width: 577px;
+         height: 226px;
+         background-color: #ececec;
+         padding-top: 57px;
+         font-size: 15px;
+      }
+.board-pw__area fieldset {
+         width: 420px;
+         margin: 0 auto;
+      }
+.board-pw__area legend {
+         font-weight: bold;
+         text-align: center;
+         margin-bottom: 17px;
+      }
+.board-pw__area label {
+         margin-right: 14px;
+         float: left;
+         line-height: 45px;
+      }
+.board-pw__area input {
+         width: 282px;
+         height: 45px;
+         border: none;
+         outline: none;
+         background: #FFF;
+         padding-left: 10px;
+         margin-right: 13px;
+         float: left;
+      }
+.board-pw__area a {
+         display: block;
+         float: left;
+         width: 54px;
+         height: 45px;
+         border-radius: 3px;
+         background: #a7a7a7;
+         line-height: 45px;
+         color: #fff;
+         font-size: 12px;
+         font-weight: 500;
+         text-align: center;
+      }
 .comment__title {
       height: 38px;
       font-size: 12px;

@@ -1,0 +1,49 @@
+@@include('modules/header.html')
+<!-- p12-3 게시판 비밀번호 start -->
+<div class="main">
+    <div class="wrapper">
+        <section class="board-pw">
+
+<!-- 왼쪽사이드 게시판 메뉴 start -->
+            <aside class="board-nav">
+                <h2 class="board-nav__title">게시판</h2>
+
+                <nav class="">
+                    <ul>
+                        <li><a href="#" class="type-of-board active"><i class="icon-all"></i>전체</a></li>
+                        <li><a href="#" class="type-of-board">공지사항</a></li>
+                        <li><a href="#" class="type-of-board">게시판 1</a></li>
+                        <li><a href="#" class="type-of-board">게시판 2</a></li>
+                    </ul>
+                </nav>
+            </aside>
+<!-- 왼쪽사이드 게시판 메뉴 end -->
+
+<!-- 오른쪽 영역 start -->
+            <div class="board-pw__area">
+
+<!-- 오른쪽 콘텐츠 영역 상단 여백 start -->
+                <div class="top-box">
+                </div>
+<!-- 오른쪽 콘텐츠 영역 상단 여백 end -->
+
+<!-- 오른쪽 비밀번호입력 영역 start -->
+                <form>
+                   <fieldset>
+                      <legend>비밀글입니다. 비밀번호를 입력하세요.</legend>
+                      <label for="board-password">비밀번호</label>
+                     <input id="board-password" type="password" required>
+                     <a href="#" class="">확인</a>
+                   </fieldset>
+                </form>
+<!-- 오른쪽 비밀번호입력 영역 end -->
+
+            </div>
+<!-- 오른쪽 영역 end -->
+
+        </section>
+    </div>
+</div>
+<!-- p12-3 게시판 비밀번호 end -->
+
+@@include('modules/footer.html')
