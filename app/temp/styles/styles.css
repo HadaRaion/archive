@@ -2141,6 +2141,16 @@ td {
       white-space: nowrap;
       word-wrap: normal;
    }
+.side-nav label span {
+         display: inline-block;
+         max-width: 125px;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         white-space: nowrap;
+         word-wrap: normal;
+         line-height: 1.2em;
+         transform: translateY(3px);
+      }
 .side-nav label::after {
       content: "\e936";
       font-family: xeicon;
