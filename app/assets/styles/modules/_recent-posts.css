@@ -12,6 +12,7 @@
 
       img {
          transition: all .3s ease-out;
+         width: 100%;
       }
 
       &__cat {

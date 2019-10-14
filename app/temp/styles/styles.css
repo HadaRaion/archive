@@ -1227,6 +1227,7 @@ i.title-img {
       }
 .recent-posts__post img {
          transition: all .3s ease-out;
+         width: 100%;
       }
 .recent-posts__post__cat {
          background: #000;
@@ -1283,6 +1284,7 @@ i.title-img {
       }
 .recent-docs__doc img {
          transition: all .3s ease-out;
+         width: 100%;
       }
 .recent-docs__doc__thumpnail {
          height: 171px;
