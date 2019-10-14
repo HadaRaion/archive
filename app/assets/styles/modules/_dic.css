@@ -169,12 +169,20 @@
          text-decoration: underline;
       }
 
+      &__etc td.notURL {
+         text-decoration: none;
+      }
+
       &__etc > td::after {
          content: "\e930";
          font-family: 'xeicon';
          display: inline-block;
          margin: 0 5px;
          transform: rotate(90deg) translateX(1px);
+      }
+
+      &__etc > td.notURL::after {
+         content: "";
       }
 
       tr.line{

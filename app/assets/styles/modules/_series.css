@@ -35,6 +35,8 @@
 
          &__thumpnail {
             height: 278px;
+            background-size: cover !important;
+            background-position: center center !important;
 
             &.no-thumbnail {
                background: url(../images/no-img-big.jpg);

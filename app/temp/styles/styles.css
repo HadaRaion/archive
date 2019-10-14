@@ -1592,6 +1592,8 @@ td {
       position: absolute;
       top: 16px;
       right: 0;
+      background-size: cover !important;
+      background-position: center center !important;
    }
 .post li.no-thumbnail .post__wrapper {
          width: 100%;
@@ -2560,12 +2562,18 @@ td {
 .dic .references__etc td {
          text-decoration: underline;
       }
+.dic .references__etc td.notURL {
+         text-decoration: none;
+      }
 .dic .references__etc > td::after {
          content: "\e930";
          font-family: 'xeicon';
          display: inline-block;
          margin: 0 5px;
          transform: rotate(90deg) translateX(1px);
+      }
+.dic .references__etc > td.notURL::after {
+         content: "";
       }
 .dic .references tr.line{
          height: 1px;
@@ -2763,6 +2771,8 @@ td {
          }
 .series .series-posts__post__thumpnail {
             height: 278px;
+            background-size: cover !important;
+            background-position: center center !important;
             
          }
 .series .series-posts__post__thumpnail.no-thumbnail {
