@@ -104,3 +104,19 @@
       }
    }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   /* IE10+ CSS styles go here */
+   .board-box__attachments__td > input {
+      height: auto;
+      transform: translateY(-3px);
+   }
+}
+
+@supports (-ms-ime-align:auto) {
+   /* Microsoft Edge Browser 12+ (All) - @supports method */
+   .board-box__attachments__td > input {
+      height: auto;
+      transform: translateY(-3px);
+   }
+ }

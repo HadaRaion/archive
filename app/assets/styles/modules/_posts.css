@@ -50,6 +50,7 @@
       position: absolute;
       top: 16px;
       right: 0;
+      border: 1px solid #ccc;
       background-size: cover !important;
       background-position: center center !important;
    }
@@ -64,7 +65,6 @@
          display: none;
       }
    }
-  
 }
 
 .posts-with-thumbnaile {
@@ -80,6 +80,7 @@
       &__thumbnail {
          width: 258px;
          height: 185px;
+         border: 1px solid #ccc;
          background-repeat: no-repeat !important;
          background-position: center !important;
          background-size: cover !important;

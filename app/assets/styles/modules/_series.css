@@ -6,11 +6,14 @@
       padding: 0;
       margin-bottom: 50px;
 
-      ::placeholder {
+      input {
+         line-height: inherit;
+      }
+
+      input::placeholder {
          font-size: 11px;
          color: #a7a7a7;
-         line-height: 30px;
-         /*  transform: translateY(-3px); */
+         line-height: 23px;
       }
    }
 
@@ -35,6 +38,7 @@
 
          &__thumpnail {
             height: 278px;
+            border: 1px solid #ccc;
             background-size: cover !important;
             background-position: center center !important;
 
@@ -53,11 +57,6 @@
             padding: 21px 18px 20px;
 
             h2 {
-               overflow: hidden;
-               text-overflow: ellipsis;
-               display: -webkit-box;
-               -webkit-line-clamp: 2;
-               -webkit-box-orient: vertical;
                word-wrap:break-word; 
                line-height: 1.3em;
             }
@@ -68,11 +67,6 @@
 
             .text {
                margin-top: 8px;
-               overflow: hidden;
-               text-overflow: ellipsis;
-               display: -webkit-box;
-               -webkit-line-clamp: 3;
-               -webkit-box-orient: vertical;
                word-wrap:break-word; 
             }
          }

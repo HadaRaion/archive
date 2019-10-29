@@ -1,7 +1,7 @@
 .existing-docs {
    
    & > .wrapper {
-      padding: 0 176px;
+      padding-left: 210px;
    }
 
    &__cat {

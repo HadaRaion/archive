@@ -40,6 +40,7 @@
    &__thumbnail {
       width: 190px;
       height: 136px;
+      border: 1px solid #ccc;
       background-repeat: no-repeat !important;
       background-position: center !important;
       background-size: cover !important;

@@ -1,12 +1,9 @@
-// 메인페이지 카운트 업 $(".num").counterUp();
-
 // 메인페이지 슬라이더 
 $('.hero-slider').slick({
     autoplay: false,
     arrows: true,
     dots: true
 });
-
 
 
 // 메인네비게이션 메뉴 
@@ -25,7 +22,6 @@ for (var i = 0; i < mainNavList.length; i++) {
 $('#boardDropdown').click(function() {
     $('ul:first',this).slideToggle(100);
 })
-
 
 
 // p04 슬라이더 
@@ -51,7 +47,6 @@ $('.slider-nav').slick({
     dots: false,
     focusOnSelect: true
 });
-
 
 
 // p04 다른기록 토글
@@ -108,7 +103,6 @@ $('.slider-nav').slick({
  })
 
 
-
 // to-top 버튼
 var btnTop = $('#toTop');
 
@@ -132,7 +126,6 @@ $('.sns-share').click(function() {
     $('ul:first',this).slideToggle(0);
 })
 
- 
 
 // 페이지 넘버
 var pageNumber = $(".page-number");
@@ -215,7 +208,6 @@ for (var i = 0; i < sideNavMenu.length; i++) {
   
 }
 
-
 // 용어 메뉴
 var typeNavMenu = $(".type-of-term");
 
@@ -250,23 +242,67 @@ for (var i = 0; i < boardMenu.length; i++) {
   
 }
 
+
 //첨부파일 추가
 $(".btn-plus").click(function(){
     $(".board-box__attachments").prepend('<li><div class="board-box__th"></div><div class="board-box__th board-box__attachments__th"> <i class="xi-attachment"> </i> 첨부파일</div><div class="board-box__td board-box__attachments__td"><input type="file"><button class="btn btn-minus" title="추가"><i class="xi-minus-min"></i></button></div></li>');
     return false;
 })
 
+
 //첨부파일 취소
 $(".btn-del").click(function(){
     $(".board-box__attachments input").value = "";
 })
+
 
 //첨부파일 추가취소
 $(".board-box__attachments").on("click", ".btn-minus", function(){
     $(this).closest("li").remove()
 })
 
+
 //전페이지로 돌아가기
 $(".btn.cancel").click(function() {
     window.history.back();
+});
+
+
+//counter 
+$( document ).ready( function() {
+	
+	jQuery(function ($) {
+    	"use strict";
+    
+    	var counterUp = window.counterUp["default"]; 
+    	var $counters = $(".num");
+    
+		$counters.each(function (ignore, counter) {
+			var waypoint = new Waypoint( {
+				element: $(this),
+				handler: function() { 
+					counterUp(counter, {
+						duration: 800,
+						delay: 16
+					}); 
+					this.destroy();
+				},
+				offset: 'bottom-in-view',
+			} );
+		});
+
+	});
+ });
+
+
+//line-clamp
+var clamp2 = $(".recent-posts__post__textbox > h2, .series-posts__post__textbox > h2");
+var clamp3 = $(".recent-posts__post__textbox > p.text, .series-posts__post__textbox > p.text");
+
+clamp2.each(function () {
+   $clamp(this, {clamp: 2});
+});
+
+clamp3.each(function () {
+   $clamp(this, {clamp: 3});
 });

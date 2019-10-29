@@ -28,6 +28,7 @@
       &__thumpnail {
          height: 230px;
          overflow: hidden;
+         border: 1px solid #ccc;
       }
 
       &__textbox {
@@ -37,25 +38,17 @@
 
          h2 {
             width:289px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
+            min-height: 52px;
             word-wrap:break-word; 
             line-height: 1.3em;
          }
+
          .line {
             margin: 16px 0 18px
          }
          .text {
             width:289px;
             margin-top: 8px;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
             word-wrap:break-word; 
          }
       }    

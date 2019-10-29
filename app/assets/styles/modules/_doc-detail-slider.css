@@ -26,7 +26,8 @@
 
       &__thumbnail.no-img {
          background: #ccc;
-
+         background-image: url(../images/no-img-small.jpg);
+         /*
          &::after {
             content: 'NO IMAGE !';
             font-family: 'Roboto';
@@ -37,6 +38,7 @@
             left: 20px;
             top: 37px;
          }
+         */
       }
 
       &__title {
