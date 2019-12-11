@@ -294,10 +294,23 @@ $( document ).ready( function() {
 	});
  });
 
+ $.fn.digits = function(){ 
+    return this.each(function(){ 
+        $(this).text( $(this).text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") ); 
+    })
+}
 
-//line-clamp
-var clamp2 = $(".recent-posts__post__textbox > h2, .series-posts__post__textbox > h2");
-var clamp3 = $(".recent-posts__post__textbox > p.text, .series-posts__post__textbox > p.text");
+$(".num").digits();
+
+
+
+// line-clamp
+
+// var clamp2 = $(".recent-posts__post__textbox > h2, .series-posts__post__textbox > h2");
+// var clamp3 = $(".recent-posts__post__textbox > p.text, .series-posts__post__textbox > p.text");
+
+var clamp2 = $(".series-posts__post__textbox > h2");
+var clamp3 = $(".series-posts__post__textbox > p.text");
 
 clamp2.each(function () {
    $clamp(this, {clamp: 2});
@@ -306,3 +319,24 @@ clamp2.each(function () {
 clamp3.each(function () {
    $clamp(this, {clamp: 3});
 });
+
+
+
+//URL 복사
+function CopyURL() {
+    var str = window.document.location.href;
+    var el = document.createElement("textarea");
+    // Set value (string to be copied)
+    el.value = str;
+    // Set non-editable to avoid focus and move outside of view
+    el.setAttribute("readonly", "");
+    el.style = {position: "absolute", left: "-9999px"};
+    document.body.appendChild(el);
+    // Select text inside element
+    el.select();
+    // Copy text to clipboard
+    document.execCommand("copy");
+    // Remove temporary element
+    document.body.removeChild(el);
+    alert("링크가 클립보드에 복사되었습니다.");
+}

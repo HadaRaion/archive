@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+    <defs>
+        <style>
+            .cls-1{fill:#fff;stroke-width:1.7px}.cls-1,.cls-2{stroke:#a7a7a7}.cls-2,.cls-3{fill:none}.cls-4{stroke:none}
+        </style>
+    </defs>
+    <g id="그룹_839" data-name="그룹 839" transform="translate(-962 -1589)">
+        <g id="그룹_806" data-name="그룹 806" transform="translate(969 1597)">
+            <g id="그룹_793" data-name="그룹 793" transform="translate(1.317 1)">
+                <g id="사각형_1494" data-name="사각형 1494" transform="translate(0 3.681)">
+                    <path id="패스_979" d="M388.362 280.36h15.832a1.9 1.9 0 0 1 1.925 1.882v7.109a1.9 1.9 0 0 1-1.925 1.882h-15.832a1.9 1.9 0 0 1-1.926-1.882v-7.109a1.9 1.9 0 0 1 1.926-1.882z" class="cls-1" data-name="패스 979" transform="translate(-386.436 -280.36)"/>
+                </g>
+                <g id="그룹_788" data-name="그룹 788" transform="translate(4.035 10.462)">
+                    <g id="사각형_1493" data-name="사각형 1493">
+                        <path id="사각형_1499" d="M0 0h11.612v7.661H0z" class="cls-1" data-name="사각형 1499"/>
+                    </g>
+                    <path id="선_134" d="M0 0h6.221" class="cls-2" data-name="선 134" transform="translate(2.54 2.873)"/>
+                    <path id="선_135" d="M0 0h3.733" class="cls-2" data-name="선 135" transform="translate(2.54 4.788)"/>
+                </g>
+                <g id="그룹_789" data-name="그룹 789" transform="translate(4.035)">
+                    <g id="사각형_1493-2" data-name="사각형 1493-2">
+                        <path id="사각형_1500" d="M0 0h11.612v3.764H0z" class="cls-1" data-name="사각형 1500"/>
+                    </g>
+                </g>
+            </g>
+            <path id="사각형_1501" d="M0 0h22v20.087H0z" class="cls-3" data-name="사각형 1501"/>
+            <path id="사각형_1506" d="M0 0h22v20.087H0z" class="cls-3" data-name="사각형 1506"/>
+        </g>
+        <g id="타원_66" class="cls-2" data-name="타원 66" transform="translate(962 1589)">
+            <circle cx="18" cy="18" r="18" class="cls-4"/>
+            <circle cx="18" cy="18" r="17.5" class="cls-3"/>
+        </g>
+    </g>
+</svg>

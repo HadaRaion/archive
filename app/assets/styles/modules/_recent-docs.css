@@ -1,11 +1,12 @@
 .recent-docs {
    margin-right: -12px;
-   margin-bottom: 90px;
+   margin-bottom: 65px;
 
    &__doc {
       width: 241px;
       float: left;
       margin-right: 12px;
+      margin-bottom: 25px;
 
       :hover img {
          transform: scale(1.07);

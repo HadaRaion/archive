@@ -1,61 +1,65 @@
 .existing-docs {
    
    & > .wrapper {
-      padding-left: 210px;
+
    }
 
    &__cat {
       float: left;
-      width: 212px;
+      width: 104px;
       color: #a7a7a7;
+      text-align: center;
+      margin-left: 24px;
 
       &:first-child {
          color: $boxBlue;
+         margin-left: 0px;
       }
 
       &__title {
          font-size: 12px;
          font-weight: bold;
-         line-height: 27px;
+         margin: 10px 0;
       }
 
       .num {
          font-family: Roboto;
-         font-size: 36px;
+         font-size: 27px;
          font-weight: 900;
       }
 
       & i {
          display: block;
-         float: left;
-         width: 70px;
-         height: 70px;
-         margin-right: 15px;
+         width: 54px;
+         height: 54px;
+         margin: 0 auto;
+         background-size: 54px 54px;
+         background-repeat: no-repeat;
 
          &.icon-{
             &all {
-               background: url(../images/icons/icon-all.svg) no-repeat;
+               background-image: url(../images/icons/icon-all.svg);
             }
             &book {
-               background: url(../images/icons/icon-book.svg) no-repeat;
+               background-image: url(../images/icons/icon-book.svg);
             }
             &doc {
-               background: url(../images/icons/icon-doc.svg) no-repeat;
+               background-image: url(../images/icons/icon-doc.svg);
             }
             &pic {
-               background: url(../images/icons/icon-pic.svg) no-repeat;
+               background-image: url(../images/icons/icon-pic.svg);
             }
             &video {
-               background: url(../images/icons/icon-video.svg) no-repeat;
+               background-image: url(../images/icons/icon-video.svg);
             }
             &relic {
-               background: url(../images/icons/icon-relic.svg) no-repeat;
+               background-image: url(../images/icons/icon-relic.svg);
             }
             &newspaper {
-               background: url(../images/icons/icon-newspaper.svg) no-repeat;
+               background-image: url(../images/icons/icon-newspaper.svg);
             }
             &voice {
-               background: url(../images/icons/icon-voice.svg) no-repeat;
+               background-image: url(../images/icons/icon-voice.svg);
             }
          }
       }
