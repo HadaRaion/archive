@@ -49,8 +49,8 @@
     height: 54px;
 
     & > a {
-        width: 30px;
-        height: 54px;
+        width: 34px;
+        height: 62px;
         position: relative;
         background-size: cover;
     }

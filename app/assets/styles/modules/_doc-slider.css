@@ -1,12 +1,12 @@
 .doc-slider {
-   width: 687px;
+   width: 794px;
    display:block;
    margin:93px auto 0;
 
    &__slide {
       color: #FFF;
       font-size: 36px;
-      line-height: 396px;
+      line-height: 460px;
       position: relative;
       text-align: center;
       background-repeat: no-repeat;

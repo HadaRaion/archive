@@ -1,3 +1,14 @@
 .test {
+   .doc-slider {
+      line-height: 0;
+   }
 
+   .doc-slider__for img{
+
+      border: 1px solid #ccc;
+      height: 459px;
+      margin: 0 auto;
+   }
 }
+
+

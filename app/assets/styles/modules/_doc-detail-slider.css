@@ -21,24 +21,13 @@
       &__thumbnail {
          background-repeat: no-repeat;
          background-size: cover; 
+         background-position: center center;
          height: 94px;
       }
 
       &__thumbnail.no-img {
          background: #ccc;
          background-image: url(../images/no-img-small.jpg);
-         /*
-         &::after {
-            content: 'NO IMAGE !';
-            font-family: 'Roboto';
-            font-size: 20px;
-            font-weight: bold;
-            color: rgba(#fff, 0.3);
-            position: relative;
-            left: 20px;
-            top: 37px;
-         }
-         */
       }
 
       &__title {
