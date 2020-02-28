@@ -13,10 +13,19 @@
       font-size: 14px;
       line-height: 25px;
       font-weight: bold;
+      color: #a7a7a7;
       
       &__count {
          color: #000;
       }
    }
 
+}
+
+.post {
+   &__title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 1.35;
+   }
 }

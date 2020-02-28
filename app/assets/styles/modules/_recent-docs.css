@@ -12,6 +12,11 @@
          transform: scale(1.07);
       }
 
+      &.no-thumbnail .recent-docs__doc__thumpnail {
+         background-size: cover;
+         background-position: center center;
+      }
+
       img {
          transition: all .3s ease-out;
          width: 100%;
@@ -20,7 +25,7 @@
       &__thumpnail {
          height: 171px;
          overflow: hidden;
-         border: 1px solid #ccc;
+         border: 1px solid #e3e3e3;
       }
 
       h2 {

@@ -1,4 +1,4 @@
-.ccl-social {
+.ccl-buttons {
    margin-top: 36px;
 
    .ccl {
@@ -12,17 +12,23 @@
       background-size: 100px 36px;
    }
 
-   .social {
+   .buttons {
       float: right;
 
-      button {
+      button, a{
          width: 36px;
          height: 36px;
+         float: left;
          border-radius: 18px;
          font-size: 0;
          margin-left: 10px;
          background-size: 36px 36px;
          background-repeat: no-repeat;
+      }
+
+      a {
+         display: block;
+         margin-left: 26px;
       }
 
       .btn-url {
@@ -31,6 +37,11 @@
 
       .btn-print {
          background-image: url(../images/icons/icon-print.svg);
+      }
+
+      .btn-list {
+         background-image: url(../images/icons/icon-list.svg);
+         background-position: center center;
       }
    }
 

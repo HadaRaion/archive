@@ -10,7 +10,7 @@
       padding: 0 12px;
 
       &:hover > .doc-detail-slider__slide__thumbnail {
-         border: 4px solid $boxBlue;
+         border: 4px solid $medium;
       }
 
       &:hover > .doc-detail-slider__slide__thumbnail.no-img::after {
@@ -28,6 +28,7 @@
       &__thumbnail.no-img {
          background: #ccc;
          background-image: url(../images/no-img-small.jpg);
+         background-position: center center;
       }
 
       &__title {

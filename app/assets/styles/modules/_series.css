@@ -1,5 +1,5 @@
 .series{
-   width: 1200px;
+   width: 1000px;
    margin: 0 auto;
 
    .align-top{
@@ -11,9 +11,15 @@
       }
 
       input::placeholder {
-         font-size: 11px;
          color: #a7a7a7;
+         /*
+         font-size: 11px;
          line-height: 23px;
+         */
+      }
+      
+      .search-box {
+         transform: translateX(0px);
       }
    }
 
@@ -21,48 +27,51 @@
       margin-right: -15px;
 
       &__post {
-         width: 390px;
+         width: 325px;
          float: left;
-         margin-right: 15px;
+         margin-right: 13px;
          margin-bottom: 42px;
 
-         &__cat {
-            background: #000;
-            height: 31px;
-            padding-left: 18px;
-            color: $boxBlue;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 31px;
-         }
-
          &__thumpnail {
-            height: 278px;
-            border: 1px solid #ccc;
+            height: 230px;
+            border: 1px solid #e3e3e3;
             background-size: cover !important;
             background-position: center center !important;
 
             &.no-thumbnail {
-               background: url(../images/no-img-big.jpg);
+               background-image: url(../images/no-img-big.jpg);
                background-repeat: no-repeat !important;
-               background-position: center !important;
-               background-size: cover !important;
-            }
-            
+            }           
          }
 
          &__textbox {
-            height: 230px;
-            background: $lineBlodGray;
-            padding: 21px 18px 20px;
+            height: 167px;
+            padding: 15px 13px 0;
+            border: 1px solid #e3e3e3;
+            border-top: none;
+            border-bottom: 8px solid #e3e3e3;
 
+            h3 {
+               font-size: 15px;
+               font-weight: bold;
+               line-height: 1.87;
+               letter-spacing: -0.005rem;
+               color: $fontBlue;
+            }
             h2 {
                word-wrap:break-word; 
-               line-height: 1.3em;
+               line-height: 1.67;
+               font-size: 17px;
+               letter-spacing: -0.005rem;
+               overflow: hidden;
+               text-overflow: ellipsis;
+               white-space: nowrap;
+               word-wrap: normal;
+               padding-bottom: 5px;
             }
 
             .line {
-               margin: 20px 0 22px
+               margin: 7px 0 11px
             }
 
             .text {

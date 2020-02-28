@@ -16,8 +16,8 @@
 <![endif]-->
 
 <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
 <!-- Custom Style  -->
@@ -35,7 +35,7 @@
       <div class="site-header__top-content">
          <div class="wrapper">
 <!-- 로고영역 start -->
-            <div class="site-header__top-content__logo" style="background-image: url(http://211.110.14.172:8081//kaitArchive/logo/20190831011049800.png);">
+            <div class="site-header__top-content__logo" style="background-image: url(temp/images/logo.png)">
                   <a href="/">사이트로고 대체텍스트</a>
             </div>
 <!-- 로고영역 end -->
@@ -54,7 +54,7 @@
                            <li><a href="#">게시판2</a></li>
                      </ul>
                   </li>
-                  <li class="search"><a href="/p03.html">검색</a></li>
+                  <!-- <li class="search"><a href="/p03.html">검색</a></li> -->
                   <li class="login"><a href="/p01.html">로그인</a></li>
                </ul>
                
@@ -68,7 +68,7 @@
             <div class="wrapper">
                <ul class="site-header__nav-content__menu">
                      
-                  <li class="site-header__nav-content__menu-list active">
+                  <li class="site-header__nav-content__menu-list">
                      <i class="arrow"></i>
                      <a href="#">형태분류</a>
                      <ul>
@@ -131,8 +131,8 @@
       </div>
 <!-- 네비게이션 메뉴 end -->
       <div class="site-header__backgoround">
-         <div class="site-header__backgoround__blue"></div>
-         <div class="site-header__backgoround__black"></div>
+         <div class="site-header__backgoround__first-depth"></div>
+         <div class="site-header__backgoround__second-depth"></div>
       </div>
    </header> 
 <!-- 헤더 end --> 
@@ -155,6 +155,12 @@
          </div>
 <!-- p09기록상세조회 제목 end -->
 
+<!-- 이전글 다음글 버튼 start -->
+         <div class="btns">
+            <a class="btns__prev" href="#"></a>
+            <a class="btns__next" href="#"></a>
+         </div>
+<!-- 이전글 다음글 버튼 end -->
 
 <!-- p09기록상세조회 상세정보 start -->
 <div class="dic__detail">
@@ -419,7 +425,7 @@
          <ul class="">
             <li class="">
                <a href="#">
-                     <div class="related-posts__thumbnail" style="background: url(./temp/images/thumbnail-small.jpg)"></div>
+                     <div class="related-posts__thumbnail" style="background-image: url(./temp/images/thumbnail-small.jpg)"></div>
                      <h3 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h3>
                </a>
             </li>
@@ -435,19 +441,19 @@
 
             <li class="">
                <a href="#">
-                     <div class="related-posts__thumbnail" style="background: url(./temp/images/thumbnail-small.jpg)"></div>
+                     <div class="related-posts__thumbnail" style="background-image: url(./temp/images/thumbnail-small.jpg)"></div>
                      <h3 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h3>
                </a>
             </li>
             <li class="">
                <a href="#">
-                     <div class="related-posts__thumbnail" style="background: url(./temp/images/thumbnail-small.jpg)"></div>
+                     <div class="related-posts__thumbnail" style="background-image: url(./temp/images/thumbnail-small.jpg)"></div>
                      <h3 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h3>
                </a>
             </li>
             <li class="">
                <a href="#">
-                     <div class="related-posts__thumbnail" style="background: url(./temp/images/thumbnail-small.jpg)"></div>
+                     <div class="related-posts__thumbnail" style="background-image: url(./temp/images/thumbnail-small.jpg)"></div>
                      <h3 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h3>
                </a>
             </li>
@@ -459,13 +465,13 @@
             </li>
             <li class="">
                <a href="#">
-                     <div class="related-posts__thumbnail" style="background: url(./temp/images/thumbnail-small.jpg)"></div>
+                     <div class="related-posts__thumbnail" style="background-image: url(./temp/images/thumbnail-small.jpg)"></div>
                      <h3 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h3>
                </a>
             </li>
             <li class="">
                <a href="#">
-                     <div class="related-posts__thumbnail" style="background: url(./temp/images/thumbnail-small.jpg)"></div>
+                     <div class="related-posts__thumbnail" style="background-image: url(./temp/images/thumbnail-small.jpg)"></div>
                      <h3 class="headline headline--15 headline--15-bold">광주의 비극으로부터 자유로울 수 없었다 </h3>
                </a>
             </li>
@@ -477,14 +483,15 @@
 
 
 <!-- ccl + URL 복사  + 프린트 버튼 start -->
-         <div class="ccl-social">
+         <div class="ccl-buttons">
                
 <!-- URL 복사 + 프린트 버튼 start -->
-            <div class="social">
+            <div class="buttons">
                <button type="button" class="btn-url" onclick="CopyURL();">URL 복사
                </button>
                <button type="button" class="btn-print" onclick="window.top.print();">출력
                </button>
+               <a href="/p03.html" class="btn-list" title="목록보기"></a>
             </div>
 <!-- URL 복사  + 프린트 버튼  end -->
          </div>

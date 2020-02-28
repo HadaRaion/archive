@@ -16,8 +16,8 @@
 <![endif]-->
 
 <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
 <!-- Custom Style  -->
@@ -35,7 +35,7 @@
       <div class="site-header__top-content">
          <div class="wrapper">
 <!-- 로고영역 start -->
-            <div class="site-header__top-content__logo" style="background-image: url(http://211.110.14.172:8081//kaitArchive/logo/20190831011049800.png);">
+            <div class="site-header__top-content__logo" style="background-image: url(temp/images/logo.png)">
                   <a href="/">사이트로고 대체텍스트</a>
             </div>
 <!-- 로고영역 end -->
@@ -54,7 +54,7 @@
                            <li><a href="#">게시판2</a></li>
                      </ul>
                   </li>
-                  <li class="search"><a href="/p03.html">검색</a></li>
+                  <!-- <li class="search"><a href="/p03.html">검색</a></li> -->
                   <li class="login"><a href="/p01.html">로그인</a></li>
                </ul>
                
@@ -68,7 +68,7 @@
             <div class="wrapper">
                <ul class="site-header__nav-content__menu">
                      
-                  <li class="site-header__nav-content__menu-list active">
+                  <li class="site-header__nav-content__menu-list">
                      <i class="arrow"></i>
                      <a href="#">형태분류</a>
                      <ul>
@@ -131,8 +131,8 @@
       </div>
 <!-- 네비게이션 메뉴 end -->
       <div class="site-header__backgoround">
-         <div class="site-header__backgoround__blue"></div>
-         <div class="site-header__backgoround__black"></div>
+         <div class="site-header__backgoround__first-depth"></div>
+         <div class="site-header__backgoround__second-depth"></div>
       </div>
    </header> 
 <!-- 헤더 end --> 
@@ -147,7 +147,7 @@
             <!-- 상단 검색 영역 start -->
             <div class="search-box">
                 <form action="">
-                    <input type="text" placeholder="용어의 키워드를 입력하세요." name="search">
+                    <input type="text" placeholder="콘텐츠의 키워드를 입력하세요." name="search">
                     <button type="submit">검색</button>
                 </form>
             </div>
@@ -161,12 +161,11 @@
             <ul class="">
                 <li class="series-posts__post">
                     <a href="#">
-                        <div class="series-posts__post__cat">영화로 보는 광복절</div>
-                        <div class="series-posts__post__thumpnail" style="background: url(./temp/images/thumbnail-series.jpg)"></div>
+                        <div class="series-posts__post__thumpnail" style="background-image: url(./temp/images/thumbnail-series.jpg)"></div>
                         <div class="series-posts__post__textbox">
-                            <h2 class="headline headline--20">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
-                            <div class="line line--blue-short"></div>
-                            <p class="text-date">2035. 12. 27</p>
+                            <h3 class="series-posts__post__cat">영화로 보는 광복절</h3>
+                            <h2 class="">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
+                            <div class="line line--short"></div>
                             <p class="text">내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 주제목의 선율이그렇게 마음에 와 닿았습니다. 내가 감옥 가기 전 마지... </p>
                         </div>
                     </a>
@@ -174,12 +173,11 @@
                 
                 <li class="series-posts__post">
                     <a href="#">
-                        <div class="series-posts__post__cat">영화로 보는 광복절</div>
-                        <div class="series-posts__post__thumpnail" style="background: url(./temp/images/thumbnail-series.jpg)"></div>
+                        <div class="series-posts__post__thumpnail" style="background-image: url(./temp/images/thumbnail-series.jpg)"></div>
                         <div class="series-posts__post__textbox">
-                            <h2 class="headline headline--20">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
-                            <div class="line line--blue-short"></div>
-                            <p class="text-date">2035. 12. 27</p>
+                            <h3 class="series-posts__post__cat">영화로 보는 광복절</h3>
+                            <h2 class="">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
+                            <div class="line line--short"></div>
                             <p class="text">내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 주제목의 선율이그렇게 마음에 와 닿았습니다. 내가 감옥 가기 전 마지... </p>
                         </div>
                     </a>
@@ -188,27 +186,26 @@
 <!-- 오른쪽 기획 콘텐츠 썸네일 없을때 start -->
                 <li class="series-posts__post">
                     <a href="#">
-                        <div class="series-posts__post__cat">영화로 보는 광복절</div>
                         <div class="series-posts__post__thumpnail no-thumbnail" style=""></div>
                         <div class="series-posts__post__textbox">
-                            <h2 class="headline headline--20">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
-                            <div class="line line--blue-short"></div>
-                            <p class="text-date">2035. 12. 27</p>
+                            <h3 class="series-posts__post__cat">영화로 보는 광복절</h3>
+                            <h2 class="">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
+                            <div class="line line--short"></div>
                             <p class="text">내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 주제목의 선율이그렇게 마음에 와 닿았습니다. 내가 감옥 가기 전 마지... </p>
                         </div>
                     </a>
                 </li>
+
 <!-- 오른쪽 기획 콘텐츠 썸네일 없을때 end -->
                 
 <!-- 오른쪽 기획 콘텐츠 썸네일 없을때 start -->
                 <li class="series-posts__post">
                     <a href="#">
-                        <div class="series-posts__post__cat">영화로 보는 광복절</div>
                         <div class="series-posts__post__thumpnail no-thumbnail" style=""></div>
                         <div class="series-posts__post__textbox">
-                            <h2 class="headline headline--20">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
-                            <div class="line line--blue-short"></div>
-                            <p class="text-date">2035. 12. 27</p>
+                            <h3 class="series-posts__post__cat">영화로 보는 광복절</h3>
+                            <h2 class="">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
+                            <div class="line line--short"></div>
                             <p class="text">내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 주제목의 선율이그렇게 마음에 와 닿았습니다. 내가 감옥 가기 전 마지... </p>
                         </div>
                     </a>
@@ -217,12 +214,11 @@
                 
                 <li class="series-posts__post">
                     <a href="#">
-                        <div class="series-posts__post__cat">영화로 보는 광복절</div>
-                        <div class="series-posts__post__thumpnail" style="background: url(./temp/images/thumbnail-series.jpg)"></div>
+                        <div class="series-posts__post__thumpnail" style="background-image: url(./temp/images/thumbnail-series.jpg)"></div>
                         <div class="series-posts__post__textbox">
-                            <h2 class="headline headline--20">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
-                            <div class="line line--blue-short"></div>
-                            <p class="text-date">2035. 12. 27</p>
+                            <h3 class="series-posts__post__cat">영화로 보는 광복절</h3>
+                            <h2 class="">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
+                            <div class="line line--short"></div>
                             <p class="text">내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 주제목의 선율이그렇게 마음에 와 닿았습니다. 내가 감옥 가기 전 마지... </p>
                         </div>
                     </a>
@@ -230,12 +226,11 @@
                 
                 <li class="series-posts__post">
                     <a href="#">
-                        <div class="series-posts__post__cat">영화로 보는 광복절</div>
-                        <div class="series-posts__post__thumpnail" style="background: url(./temp/images/thumbnail-series.jpg)"></div>
+                        <div class="series-posts__post__thumpnail" style="background-image: url(./temp/images/thumbnail-series.jpg)"></div>
                         <div class="series-posts__post__textbox">
-                            <h2 class="headline headline--20">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
-                            <div class="line line--blue-short"></div>
-                            <p class="text-date">2035. 12. 27</p>
+                            <h3 class="series-posts__post__cat">영화로 보는 광복절</h3>
+                            <h2 class="">연상세계를 주목하기 시작한 것은 독방의 무료를 달래기 위한 노래 때문이었다 </h2>
+                            <div class="line line--short"></div>
                             <p class="text">내가 감옥 가기 전 마지막으로 본 영화이기도 하고, 그 영화의 첫 장면과 함께 흐르는 주제목의 선율이 주제목의 선율이그렇게 마음에 와 닿았습니다. 내가 감옥 가기 전 마지... </p>
                         </div>
                     </a>

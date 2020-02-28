@@ -8,14 +8,20 @@ $('.hero-slider').slick({
 
 // 메인네비게이션 메뉴 
 var mainNavList = $('.site-header__nav-content__menu-list');
+var background = $('.site-header__backgoround__second-depth')
 
 for (var i = 0; i < mainNavList.length; i++) {
 
-    mainNavList[i].onclick = function() {
+    mainNavList[i].onmouseover = function() {
         mainNavList.removeClass("active");
+        background.addClass("active")
         this.classList.add("active");
     };
-    
+
+    mainNavList[i].onmouseleave = function() {
+        background.removeClass("active")
+        this.classList.remove("active");
+    };
 }
 
 // 탑메뉴 게시판
@@ -306,18 +312,11 @@ $(".num").digits();
 
 // line-clamp
 
-// var clamp2 = $(".recent-posts__post__textbox > h2, .series-posts__post__textbox > h2");
-// var clamp3 = $(".recent-posts__post__textbox > p.text, .series-posts__post__textbox > p.text");
-
-var clamp2 = $(".series-posts__post__textbox > h2");
-var clamp3 = $(".series-posts__post__textbox > p.text");
+// var clamp2 = $(".series-posts__post__textbox > h2");
+var clamp2 = $(".series-posts__post__textbox > p.text");
 
 clamp2.each(function () {
    $clamp(this, {clamp: 2});
-});
-
-clamp3.each(function () {
-   $clamp(this, {clamp: 3});
 });
 
 

@@ -1,6 +1,15 @@
 .dic {
    padding-top: 60px;
 
+   > div{
+      padding : 0 100px;
+
+      &.dic__detail  {
+         padding: 0;
+      }
+   
+   }
+
    &__title {
       font-size: 26px;
       font-weight: bold;

@@ -6,7 +6,7 @@
    padding-top: 70px;
 
    &__area {
-      width: calc(100% - 305px);
+      width: calc(100% - 201px);
       float: left;
 
       .top-box {
@@ -29,11 +29,8 @@
       }
 
       .to-list {
-         margin-left: 5px;
-         padding-right: 3px;
-         i {
-            color: #fff;
-         }
+         margin-left: 24px;
+
       }
    }   
 

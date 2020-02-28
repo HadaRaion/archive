@@ -19,7 +19,7 @@
    }
 
    &__tr-half {
-      width:330px !important;
+      width:390px !important;
       float: left;
 
       input {
@@ -46,7 +46,7 @@
    }
 
    &__td-title > input {
-      width: 511px;
+      width: 711px;
    }
 
    input[type=text], input[type=password] {

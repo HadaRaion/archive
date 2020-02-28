@@ -2,7 +2,7 @@
    padding-top: 70px;
 
    &__table {
-      width: calc(100% - 305px);
+      width: calc(100% - 201px);
       float: left;
 
       .top-box {
@@ -91,11 +91,11 @@
    table {
 
       th, td {
-         height: 38px;
          overflow: hidden;
          margin: 0;
          padding: 0;
          text-align: center;
+         line-height: 40px;
       }
 
       .board-title {
@@ -112,21 +112,21 @@
          text-overflow: ellipsis;
          white-space: nowrap;
          word-wrap: normal;
-         max-width: 380px;
+         max-width: 480px;
       }
 
       .board-title-1 > a {
-         max-width: 340px;
+         max-width: 444px;
       }
       .board-title-2 > a {
-         max-width: 320px;
+         max-width: 424px;
       }
       .board-title-3 > a {
-         max-width: 310px;
+         max-width: 414px;
       }
       
       .board-title.re > a {
-         max-width: 380px;
+         max-width: 484px;
 
          &::before {
             content: '\e97e';
@@ -184,7 +184,7 @@
 
    .nav-writeBtn {
       position: relative;
-      margin-top: 48px;
+      margin-top: 34px;
 
       > .btn {
          position: absolute;

@@ -1,17 +1,17 @@
 .terms .posts {
-   width: calc(100% - 305px);
+   width: calc(100% - 202px);
 }
 
 .terms .align-top {
-   padding-right: 102px;
-   margin-bottom: 50px;
+   margin-bottom: 18px;
 
    ::placeholder {
-      font-size: 11px;
       color: #a7a7a7;
+/*  
+      font-size: 11px;
       line-height: 30px;
-      /*  transform: translateY(-3px); */
-     
+      transform: translateY(-3px); 
+*/
    }
 }
 
@@ -19,7 +19,8 @@
    width: 100%;
 
    th, td {
-      height: 38px;
+      line-height: 40px;
+      padding: 0;
    }
 
    td > a {
@@ -28,7 +29,7 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       word-wrap: normal;
-      max-width: 195px;
+      width: 280px;
    }
 
    td > span {
@@ -40,23 +41,23 @@
    }
 
    &__another-title > span {
-      max-width: 190px;
+      width: 210px;
    }
 
    &__period > span {
-      max-width: 185px;
+      width: 195px;
    }
 
    &__date > span {
-      max-width: 85px;
+      width: 85px;
    }
 
    i {
       display: inline-block;
       width:13px;
       height: 20px;
-      transform: translateY(1px);
-      margin-left: 6px;
+      transform: translateY(4px);
+      margin: 0 10px 0 6px;
 
       &.icon-user {
          background: url(../images/icons/icon-user-gray.svg) no-repeat center center;

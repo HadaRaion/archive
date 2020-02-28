@@ -1,9 +1,11 @@
 .series-contents {
    padding-top: 60px;
   
+   > div{
+      padding : 0 100px; 
+   }
 
    &__container {
-      width: calc(100% - 200px);
       margin: 0 auto;
    }
 
@@ -20,7 +22,8 @@
       font-weight: bold;
       text-align: center;
       margin-top: 10px;
-      line-height: 36px
+      line-height: 1.54;
+      letter-spacing: -0.005rem;
    }
 
    &__info {
@@ -38,18 +41,15 @@
 
       > img{
          width: 100%;
+         border: 1px solid #e3e3e3;
       }
    }
 
    &__text {
-      margin-top: 38px;
+      margin-top: 62px;
 
       p {
          margin-bottom: 38px;
       }
-   }
-
-   .ccl-social {
-      padding-right: 100px;
    }
 }

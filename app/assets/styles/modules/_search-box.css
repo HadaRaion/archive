@@ -1,6 +1,7 @@
 .search-box {
    width:594px;
-   margin: 54px auto 0;
+   margin: 48px auto 0;
+   transform: translateX(-3px);
 
    input {
       width:533px;
@@ -8,6 +9,7 @@
       border: solid 4px #e3e3e3;
       border-right: none;
       float: left;
+      font-size: 15px;
    }
 
    button {
@@ -50,5 +52,5 @@
 }
 
 .align-top {
-   padding-left: 202px;
+   /* padding-left: 202px; */
 }

@@ -51,6 +51,7 @@
    padding:0 13px 0 11px;;
    color: #707070;
    line-height: 27px;
+   font-weight: 400;
 
    &-small{
       width: 70px;
@@ -159,5 +160,46 @@
       background-color: #4b4b4b;
       color: #fff;
    }
+
+   &.btn-list {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      top: -3px;
+      border-radius: 18px;
+      font-size: 0;
+      background-image: url(../images/icons/icon-list.svg);
+      background-position: center center;
+      background-size: 36px 36px;
+      background-repeat: no-repeat;
+   }
  
 }
+
+.btns {
+   position: fixed;
+   top: 355px;
+   width: 1000px;
+   height: 54px;
+
+   & > a {
+       width: 30px;
+       height: 54px;
+       position: relative;
+       background-size: cover;
+   }
+
+   &__prev {
+       float: left;
+       transform: translateX(-100px);
+       background-image: url(../images/icons/arrow-left.png);
+
+   }
+
+   &__next {
+       float: right;
+       transform: translateX(100px);
+       background-image: url(../images/icons/arrow-right.png);
+   }
+ }

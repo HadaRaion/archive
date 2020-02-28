@@ -98,7 +98,13 @@
       font-weight: 500;
       line-height: 28px;
    }
+   &-view .select {
+     width: 130px;
+   }
 
+   &-number .select {
+    width: 120px;
+  }
    .select-styled {
       padding: 0 10px;
       overflow: hidden;
@@ -107,7 +113,7 @@
          content: "";
          width: 0;
          height: 0;
-         border: 7px solid transparent;
+         border: 5px solid transparent;
          border-color: #707070 transparent transparent transparent;
          position: absolute;
          top: 12px;
@@ -199,3 +205,53 @@ i.title-img {
   color: $boxBlue;
 }
 
+
+.posts__array-view .select-styled::before, .posts__array-view .select-options li::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  width: 14px;
+  height: 13px;
+  margin-right: 7px;
+  top: 2px;
+}
+
+.posts__array-view.text-first .select-styled::before {
+  background: url(../images/icons/icon-title-text.svg);
+}
+
+.posts__array-view.text-first .select-options li:first-child::before {
+  background: url(../images/icons/icon-title-text.svg);
+}
+
+.posts__array-view.text-first .select-options li:last-child::before {
+  background: url(../images/icons/icon-title-img.svg);
+}
+
+.posts__array-view.text-first .select-options li:first-child:hover::before {
+  background: url(../images/icons/icon-title-text-color.svg);
+}
+
+.posts__array-view.text-first .select-options li:last-child:hover::before {
+  background: url(../images/icons/icon-title-img-color.svg);
+}
+
+.posts__array-view.thumb-first .select-styled::before {
+  background: url(../images/icons/icon-title-img.svg);
+}
+
+.posts__array-view.thumb-first .select-options li:first-child::before {
+  background: url(../images/icons/icon-title-img.svg);
+}
+
+.posts__array-view .select-options li:last-child::before {
+  background: url(../images/icons/icon-title-text.svg);
+}
+
+.posts__array-view .select-options li:first-child:hover::before {
+  background: url(../images/icons/icon-title-img-color.svg);
+}
+
+.posts__array-view .select-options li:last-child:hover::before {
+  background: url(../images/icons/icon-title-text-color.svg);
+}

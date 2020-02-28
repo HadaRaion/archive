@@ -4,21 +4,21 @@
       height: 35px;
       font-size: 12px;
       font-weight: 500;
-      line-height: 35px;
-      color: #000000;
-      border-bottom: 2px solid #000;
+      line-height: 30px;
+      letter-spacing: 0.96px;
+      color: #707070;
    }
 }
 
-
-
-
-
 .side-nav {
-   margin-top: 10px;
-   
+
    .nav-main ul, input[type="checkbox"] {
       display:none;
+   }
+   .nav-main > label {
+      background-color: #ececec;
+      display: block;
+      padding: 0 5px 0 10px;
    }
 
    .nav-main input:checked ~ ul {
@@ -37,7 +37,7 @@
    label {
       span {
          display: inline-block;
-         max-width: 125px;
+         max-width: 120px;
          overflow: hidden;
          text-overflow: ellipsis;
          white-space: nowrap;
@@ -49,93 +49,80 @@
    }
 
    label::after {
-      content: "\e936";
+      content: "\e942";
       font-family: xeicon;
       float: right;
    }
 
    .nav-main input:checked ~ label::after {
-      content: "\e930";
-      color: #2da3ff;
-   }
-
-   .nav-main > label::after {
-      content: "\e942";
-      font-family: xeicon;
-   }
-
-   .nav-main > input:checked ~ label::after {
       content: "\e945";
-      font-family: xeicon;
+      color: $menuBlue;
    }
 
    .nav-main {
       font-size: 16px;
-      font-weight: bold;
-      color: #a7a7a7;
+      font-weight: 500;
       line-height: 2.5em;
    }
 
-   .nav-main input:checked ~ label {
-      color: #2da3ff;
-   }
-
-   .nav-main > ul > li:first-child {
-      margin-top: 8px;
-   }
-
-   .nav-main > ul > li:last-child {
-      margin-bottom: 10px;
+   .nav-main > input:checked ~ label {
+      background-color: $light;
+      color: $menuBlue;
    }
 
    .nav-sub {
       font-size: 15px;
       font-weight: normal;
       color: #707070;
-      line-height: 2.2em;
+      line-height: 38px;
 
       & > label {
-         padding-left: 15px;
+         margin-left: 15px;
+         padding-right: 5px;
+         border-bottom: 1px solid #ccc;
+         display: block;
+
       }
    }
 
-   .nav-sub > ul > li {
-      line-height: 1.9em;
-      margin-left: 15px;
+   .nav-main > ul > li:last-child .nav-sub label {
+      border: none;
+   }
 
+   .nav-sub > input:checked ~ label, .nav-sub input:checked ~ label::after {
+      color: $fontBlue;
+      border-color: $fontBlue;
+   }
+
+   .nav-sub > ul > li {
+      line-height: 32px;
+      margin-left: 15px;
    }
 
    .nav-sub > ul > li:first-child {
-      margin-top: 8px;
+      margin-top: 5px;
    }
+
    .nav-sub > ul > li:last-child {
-      margin-bottom: 10px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #ccc;
    }
-   .nav-menu {
-      font-size: 12px;
+
+   .nav-main > ul > li:last-child > .nav-sub > ul > li:last-child {
+      border: none;
    }
 
    .nav-menu.active {
-      color: #2da3ff;
-   }
-
-   .nav-menu.active::before {
-      content: '';
-      display: inline-block;
-      width: 6px;
-      height: 6px;
-      border-radius: 6px;
-      background-color: #2da3ff;
-      margin-right: 8px;
-      transform: translateY(-1px);
+      color: $fontBlue;
+      margin-left: 14px;
    }
 }
 
 .line-nav-main {
-   border-bottom: 1px solid #a7a7a7;
+   border-bottom: 2px solid #fff;
 }
 
 .line-nav-sub {
-   border-bottom: 1px solid #ccc;
+   /* border-bottom: 2px solid #ccc; */
    margin-left:15px;
 }

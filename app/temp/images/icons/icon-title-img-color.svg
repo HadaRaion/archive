@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#6244b7}
+        </style>
+    </defs>
+    <g id="prefix__그룹_428" data-name="그룹 428" transform="translate(-861 -383.428)">
+        <path id="prefix__사각형_76" d="M0 0H6V5H0z" class="prefix__cls-1" data-name="사각형 76" transform="translate(861 383.428)"/>
+        <path id="prefix__사각형_79" d="M0 0H6V5H0z" class="prefix__cls-1" data-name="사각형 79" transform="translate(861 390.428)"/>
+        <path id="prefix__사각형_77" d="M0 0H6V5H0z" class="prefix__cls-1" data-name="사각형 77" transform="translate(869 383.428)"/>
+        <path id="prefix__패스_886" d="M0 0h6v5H0z" class="prefix__cls-1" data-name="패스 886" transform="translate(869 390.428)"/>
+    </g>
+</svg>
