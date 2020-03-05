@@ -30,6 +30,7 @@
 
       &__textbox {
          border: 1px solid #e3e3e3;
+         border-top: none;
          padding: 11px 11px 10px;
 
          h3 {

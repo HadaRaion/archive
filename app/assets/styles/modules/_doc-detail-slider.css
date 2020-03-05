@@ -29,6 +29,7 @@
          background: #ccc;
          background-image: url(../images/no-img-small.jpg);
          background-position: center center;
+         background-size: cover;
       }
 
       &__title {

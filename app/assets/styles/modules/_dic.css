@@ -28,7 +28,7 @@
 
    &__detail {
       width: calc(100% - 200px);
-      margin: 28px auto 0;
+      margin: 30px auto 0;
    }
    
    .dic-detail {

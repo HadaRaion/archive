@@ -17,6 +17,13 @@
       position: relative;
    }
 
+   .type-of-board {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      word-wrap: normal;
+   }
 
    .type-of-board.active {
       color: $boxBlue;

@@ -29,7 +29,8 @@
       text-overflow: ellipsis;
       white-space: nowrap;
       word-wrap: normal;
-      width: 280px;
+      width: 265px;
+      padding-right: 20px;
    }
 
    td > span {
@@ -42,14 +43,17 @@
 
    &__another-title > span {
       width: 210px;
+      padding-right: 20px;
    }
 
    &__period > span {
-      width: 195px;
+      width: 205px;
+      padding-right: 20px;
    }
 
    &__date > span {
-      width: 85px;
+      width: 90px;
+      padding-right: 5px;
    }
 
    i {
