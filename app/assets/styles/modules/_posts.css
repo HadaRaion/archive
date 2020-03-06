@@ -51,7 +51,8 @@
       top: 16px;
       right: 0;
       border: 1px solid #e3e3e3;
-      background-size: cover !important;
+      background-size: cover;
+      background-position: center center;
    }
    
    li.no-thumbnail {
@@ -80,9 +81,9 @@
          width: 258px;
          height: 185px;
          border: 1px solid #e3e3e3;
-         background-repeat: no-repeat !important;
-         background-size: cover !important;
-         
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center center;
       }
 
       &.no-thumbnail .posts-with-thumbnaile__post__thumbnail {
