@@ -144,6 +144,8 @@
          & > ul {
             display: none;
             height: 30px;
+            width: 1000px;
+            overflow: hidden;
             background-color: #ccc;
             position: absolute;
             left: 0;
@@ -155,6 +157,10 @@
                color: #000;
                margin-right: 30px; 
                line-height: 30px;
+
+               &:last-child {
+                  margin-right: 0;
+               }
             }
          }
       }
