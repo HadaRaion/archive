@@ -8,24 +8,28 @@
       margin-right: 12px;
       margin-bottom: 47px;
 
-      :hover img {
-         transform: scale(1.07);
+      &.no-thumbnail .recent-posts__post__thumpnail:hover {
+         transform: scale(1);
       }
 
-      img {
-         transition: all .3s ease-out;
-         width: 100%;
-      }
-
-      &.no-thumbnail .recent-posts__post__thumpnail {
-         background-size: cover;
-         background-position: center center;
-      }
-
-      &__thumpnail {
+      &__thumpnail-frame {
          height: 230px;
          overflow: hidden;
          border: 1px solid #e3e3e3;
+         position: relative;
+      }
+
+      &__thumpnail {
+         width: 100%;
+         height: 100%;
+         background-position: center center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         transition: all .3s ease-out;
+
+         &:hover {
+            transform: scale(1.07);
+         }
       }
 
       &__textbox {
